@@ -1,0 +1,131 @@
+{
+  "schema": "urn:tyche:multiroot-evidence-corpus:1.0",
+  "verification_time": "2026-06-03T00:00:00Z",
+  "cases": [
+    {
+      "case_id": "C1",
+      "title": "multi-root success",
+      "expected_verdict": "accept",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "identities": [
+        {"id": "id-alpha", "issuer": "identity-root-a", "subject": "agent-alpha", "scope": ["agent:records"], "assurance": "high"},
+        {"id": "id-beta", "issuer": "identity-root-b", "subject": "agent-beta", "scope": ["agent:analysis"], "assurance": "high"}
+      ],
+      "actions": [
+        {"id": "act-alpha", "issuer": "action-root-a", "identity": "id-alpha", "subject": "agent-alpha", "scope": "agent:records", "sequence": 1, "payload": "agent-alpha updated record A", "broker": "broker-eu-1"},
+        {"id": "act-beta", "issuer": "action-root-b", "identity": "id-beta", "subject": "agent-beta", "scope": "agent:analysis", "sequence": 1, "payload": "agent-beta produced analysis B", "broker": "broker-eu-1"}
+      ]
+    },
+    {
+      "case_id": "C2",
+      "title": "non-brokered success",
+      "expected_verdict": "accept",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "identities": [
+        {"id": "id-gamma", "issuer": "identity-root-a", "subject": "agent-gamma", "scope": ["agent:records"], "assurance": "high"}
+      ],
+      "actions": [
+        {"id": "act-gamma", "issuer": "action-root-a", "identity": "id-gamma", "subject": "agent-gamma", "scope": "agent:records", "sequence": 1, "payload": "agent-gamma executed without broker metadata"}
+      ]
+    },
+    {
+      "case_id": "C3",
+      "title": "identity substitution",
+      "expected_verdict": "reject",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "identities": [
+        {"id": "id-delta", "issuer": "identity-root-a", "subject": "agent-delta", "scope": ["agent:records"], "assurance": "high"}
+      ],
+      "actions": [
+        {"id": "act-substituted", "issuer": "action-root-a", "identity": "id-missing", "subject": "agent-delta", "scope": "agent:records", "sequence": 1, "payload": "receipt references a missing identity assertion"}
+      ]
+    },
+    {
+      "case_id": "C4",
+      "title": "broker downgrade",
+      "expected_verdict": "reject",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "identities": [
+        {"id": "id-epsilon", "issuer": "identity-root-a", "subject": "agent-epsilon", "scope": ["agent:records"], "assurance": "high"}
+      ],
+      "actions": [
+        {"id": "act-downgrade", "issuer": "action-root-a", "identity": "id-epsilon", "subject": "agent-epsilon", "scope": "agent:records", "sequence": 1, "payload": "broker omits validation material", "broker": "broker-eu-1", "validation_material_embedded": false, "broker_assurance": "low"}
+      ]
+    },
+    {
+      "case_id": "C5",
+      "title": "issuer distrust after cutoff",
+      "expected_verdict": "reject",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "identities": [
+        {"id": "id-zeta", "issuer": "identity-root-a", "subject": "agent-zeta", "scope": ["agent:records"], "assurance": "high"}
+      ],
+      "actions": [
+        {"id": "act-retired", "issuer": "action-root-retired", "identity": "id-zeta", "subject": "agent-zeta", "scope": "agent:records", "sequence": 1, "payload": "action issued after trust cutoff", "issued_at": "2026-06-02T12:00:00Z"}
+      ]
+    },
+    {
+      "case_id": "C6",
+      "title": "stale revocation evidence",
+      "expected_verdict": "indeterminate",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "identities": [
+        {"id": "id-eta", "issuer": "identity-root-a", "subject": "agent-eta", "scope": ["agent:records"], "assurance": "high"}
+      ],
+      "actions": [
+        {"id": "act-stale-revocation", "issuer": "action-root-a", "identity": "id-eta", "subject": "agent-eta", "scope": "agent:records", "sequence": 1, "payload": "revocation evidence is stale", "revocation_status_issued_at": "2026-05-01T00:00:00Z"}
+      ]
+    },
+    {
+      "case_id": "C7",
+      "title": "cross-policy replay",
+      "expected_verdict": "reject",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "identities": [
+        {"id": "id-theta", "issuer": "identity-root-a", "subject": "agent-theta", "scope": ["agent:payments"], "assurance": "high"}
+      ],
+      "actions": [
+        {"id": "act-replayed", "issuer": "action-root-a", "identity": "id-theta", "subject": "agent-theta", "scope": "agent:payments", "sequence": 1, "payload": "payment action replayed under records policy"}
+      ],
+      "policy_override": {"accepted_scopes": ["agent:records"]}
+    },
+    {
+      "case_id": "C8",
+      "title": "offline validation",
+      "expected_verdict": "accept",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "identities": [
+        {"id": "id-iota", "issuer": "identity-root-b", "subject": "agent-iota", "scope": ["agent:analysis"], "assurance": "high"}
+      ],
+      "actions": [
+        {"id": "act-offline", "issuer": "action-root-b", "identity": "id-iota", "subject": "agent-iota", "scope": "agent:analysis", "sequence": 1, "payload": "offline verifier has embedded validation material", "validation_material_embedded": true}
+      ]
+    },
+    {
+      "case_id": "C9",
+      "title": "lookup dependency",
+      "expected_verdict": "reject",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "identities": [
+        {"id": "id-kappa", "issuer": "identity-root-a", "subject": "agent-kappa", "scope": ["agent:records"], "assurance": "high"}
+      ],
+      "actions": [
+        {"id": "act-lookup", "issuer": "action-root-a", "identity": "id-kappa", "subject": "agent-kappa", "scope": "agent:records", "sequence": 1, "payload": "package requires live registry lookup", "requires_live_lookup": true}
+      ]
+    },
+    {
+      "case_id": "C10",
+      "title": "algorithm migration",
+      "expected_verdict": "indeterminate",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "identities": [
+        {"id": "id-lambda", "issuer": "identity-root-a", "subject": "agent-lambda", "scope": ["agent:records"], "assurance": "high"}
+      ],
+      "actions": [
+        {"id": "act-algorithm-transition", "issuer": "action-root-a", "identity": "id-lambda", "subject": "agent-lambda", "scope": "agent:records", "sequence": 1, "payload": "transition-era RSA-only package under PQC-required policy", "algorithm_profile": "rsa-sha256-transitional"}
+      ],
+      "policy_override": {"accepted_algorithm_profiles": ["rsa-sha256+pqc"]}
+    }
+  ]
+}
+

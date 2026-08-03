@@ -1,0 +1,284 @@
+{
+  "schema": "urn:tyche:multiroot-eatf-corpus-index:1.0",
+  "eatf_root": "vendor/eatf",
+  "eatf_signer": "vendor/eatf/cli/eatf-sign/bin/eatf-sign.js",
+  "eatf_verifier": "vendor/eatf/cli/eatf-verify/bin/eatf-verify.js",
+  "timestamp_source": "vendor/eatf/test-vectors/valid/valid-overt-profile/package.aep:timestamp.tsr",
+  "key_note": "Generated packages use the EATF bundled dev RSA keypair for reproducible research fixtures only.",
+  "cases": [
+    {
+      "case_id": "C1",
+      "title": "multi-root success",
+      "expected_verdict": "accept",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "policy_override": {},
+      "packages": [
+        {
+          "role": "identity",
+          "id": "id-alpha",
+          "attestation_id": "C1-id-alpha",
+          "path": "corpus/generated/C1/aep/c1-id-alpha.aep",
+          "metadata": "corpus/generated/C1/metadata/c1-id-alpha.json",
+          "payload": "corpus/generated/C1/payloads/c1-id-alpha.txt"
+        },
+        {
+          "role": "identity",
+          "id": "id-beta",
+          "attestation_id": "C1-id-beta",
+          "path": "corpus/generated/C1/aep/c1-id-beta.aep",
+          "metadata": "corpus/generated/C1/metadata/c1-id-beta.json",
+          "payload": "corpus/generated/C1/payloads/c1-id-beta.txt"
+        },
+        {
+          "role": "action",
+          "id": "act-alpha",
+          "attestation_id": "C1-act-alpha",
+          "path": "corpus/generated/C1/aep/c1-act-alpha.aep",
+          "metadata": "corpus/generated/C1/metadata/c1-act-alpha.json",
+          "payload": "corpus/generated/C1/payloads/c1-act-alpha.txt"
+        },
+        {
+          "role": "action",
+          "id": "act-beta",
+          "attestation_id": "C1-act-beta",
+          "path": "corpus/generated/C1/aep/c1-act-beta.aep",
+          "metadata": "corpus/generated/C1/metadata/c1-act-beta.json",
+          "payload": "corpus/generated/C1/payloads/c1-act-beta.txt"
+        }
+      ]
+    },
+    {
+      "case_id": "C2",
+      "title": "non-brokered success",
+      "expected_verdict": "accept",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "policy_override": {},
+      "packages": [
+        {
+          "role": "identity",
+          "id": "id-gamma",
+          "attestation_id": "C2-id-gamma",
+          "path": "corpus/generated/C2/aep/c2-id-gamma.aep",
+          "metadata": "corpus/generated/C2/metadata/c2-id-gamma.json",
+          "payload": "corpus/generated/C2/payloads/c2-id-gamma.txt"
+        },
+        {
+          "role": "action",
+          "id": "act-gamma",
+          "attestation_id": "C2-act-gamma",
+          "path": "corpus/generated/C2/aep/c2-act-gamma.aep",
+          "metadata": "corpus/generated/C2/metadata/c2-act-gamma.json",
+          "payload": "corpus/generated/C2/payloads/c2-act-gamma.txt"
+        }
+      ]
+    },
+    {
+      "case_id": "C3",
+      "title": "identity substitution",
+      "expected_verdict": "reject",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "policy_override": {},
+      "packages": [
+        {
+          "role": "identity",
+          "id": "id-delta",
+          "attestation_id": "C3-id-delta",
+          "path": "corpus/generated/C3/aep/c3-id-delta.aep",
+          "metadata": "corpus/generated/C3/metadata/c3-id-delta.json",
+          "payload": "corpus/generated/C3/payloads/c3-id-delta.txt"
+        },
+        {
+          "role": "action",
+          "id": "act-substituted",
+          "attestation_id": "C3-act-substituted",
+          "path": "corpus/generated/C3/aep/c3-act-substituted.aep",
+          "metadata": "corpus/generated/C3/metadata/c3-act-substituted.json",
+          "payload": "corpus/generated/C3/payloads/c3-act-substituted.txt"
+        }
+      ]
+    },
+    {
+      "case_id": "C4",
+      "title": "broker downgrade",
+      "expected_verdict": "reject",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "policy_override": {},
+      "packages": [
+        {
+          "role": "identity",
+          "id": "id-epsilon",
+          "attestation_id": "C4-id-epsilon",
+          "path": "corpus/generated/C4/aep/c4-id-epsilon.aep",
+          "metadata": "corpus/generated/C4/metadata/c4-id-epsilon.json",
+          "payload": "corpus/generated/C4/payloads/c4-id-epsilon.txt"
+        },
+        {
+          "role": "action",
+          "id": "act-downgrade",
+          "attestation_id": "C4-act-downgrade",
+          "path": "corpus/generated/C4/aep/c4-act-downgrade.aep",
+          "metadata": "corpus/generated/C4/metadata/c4-act-downgrade.json",
+          "payload": "corpus/generated/C4/payloads/c4-act-downgrade.txt"
+        }
+      ]
+    },
+    {
+      "case_id": "C5",
+      "title": "issuer distrust after cutoff",
+      "expected_verdict": "reject",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "policy_override": {},
+      "packages": [
+        {
+          "role": "identity",
+          "id": "id-zeta",
+          "attestation_id": "C5-id-zeta",
+          "path": "corpus/generated/C5/aep/c5-id-zeta.aep",
+          "metadata": "corpus/generated/C5/metadata/c5-id-zeta.json",
+          "payload": "corpus/generated/C5/payloads/c5-id-zeta.txt"
+        },
+        {
+          "role": "action",
+          "id": "act-retired",
+          "attestation_id": "C5-act-retired",
+          "path": "corpus/generated/C5/aep/c5-act-retired.aep",
+          "metadata": "corpus/generated/C5/metadata/c5-act-retired.json",
+          "payload": "corpus/generated/C5/payloads/c5-act-retired.txt"
+        }
+      ]
+    },
+    {
+      "case_id": "C6",
+      "title": "stale revocation evidence",
+      "expected_verdict": "indeterminate",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "policy_override": {},
+      "packages": [
+        {
+          "role": "identity",
+          "id": "id-eta",
+          "attestation_id": "C6-id-eta",
+          "path": "corpus/generated/C6/aep/c6-id-eta.aep",
+          "metadata": "corpus/generated/C6/metadata/c6-id-eta.json",
+          "payload": "corpus/generated/C6/payloads/c6-id-eta.txt"
+        },
+        {
+          "role": "action",
+          "id": "act-stale-revocation",
+          "attestation_id": "C6-act-stale-revocation",
+          "path": "corpus/generated/C6/aep/c6-act-stale-revocation.aep",
+          "metadata": "corpus/generated/C6/metadata/c6-act-stale-revocation.json",
+          "payload": "corpus/generated/C6/payloads/c6-act-stale-revocation.txt"
+        }
+      ]
+    },
+    {
+      "case_id": "C7",
+      "title": "cross-policy replay",
+      "expected_verdict": "reject",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "policy_override": {
+        "accepted_scopes": [
+          "agent:records"
+        ]
+      },
+      "packages": [
+        {
+          "role": "identity",
+          "id": "id-theta",
+          "attestation_id": "C7-id-theta",
+          "path": "corpus/generated/C7/aep/c7-id-theta.aep",
+          "metadata": "corpus/generated/C7/metadata/c7-id-theta.json",
+          "payload": "corpus/generated/C7/payloads/c7-id-theta.txt"
+        },
+        {
+          "role": "action",
+          "id": "act-replayed",
+          "attestation_id": "C7-act-replayed",
+          "path": "corpus/generated/C7/aep/c7-act-replayed.aep",
+          "metadata": "corpus/generated/C7/metadata/c7-act-replayed.json",
+          "payload": "corpus/generated/C7/payloads/c7-act-replayed.txt"
+        }
+      ]
+    },
+    {
+      "case_id": "C8",
+      "title": "offline validation",
+      "expected_verdict": "accept",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "policy_override": {},
+      "packages": [
+        {
+          "role": "identity",
+          "id": "id-iota",
+          "attestation_id": "C8-id-iota",
+          "path": "corpus/generated/C8/aep/c8-id-iota.aep",
+          "metadata": "corpus/generated/C8/metadata/c8-id-iota.json",
+          "payload": "corpus/generated/C8/payloads/c8-id-iota.txt"
+        },
+        {
+          "role": "action",
+          "id": "act-offline",
+          "attestation_id": "C8-act-offline",
+          "path": "corpus/generated/C8/aep/c8-act-offline.aep",
+          "metadata": "corpus/generated/C8/metadata/c8-act-offline.json",
+          "payload": "corpus/generated/C8/payloads/c8-act-offline.txt"
+        }
+      ]
+    },
+    {
+      "case_id": "C9",
+      "title": "lookup dependency",
+      "expected_verdict": "reject",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "policy_override": {},
+      "packages": [
+        {
+          "role": "identity",
+          "id": "id-kappa",
+          "attestation_id": "C9-id-kappa",
+          "path": "corpus/generated/C9/aep/c9-id-kappa.aep",
+          "metadata": "corpus/generated/C9/metadata/c9-id-kappa.json",
+          "payload": "corpus/generated/C9/payloads/c9-id-kappa.txt"
+        },
+        {
+          "role": "action",
+          "id": "act-lookup",
+          "attestation_id": "C9-act-lookup",
+          "path": "corpus/generated/C9/aep/c9-act-lookup.aep",
+          "metadata": "corpus/generated/C9/metadata/c9-act-lookup.json",
+          "payload": "corpus/generated/C9/payloads/c9-act-lookup.txt"
+        }
+      ]
+    },
+    {
+      "case_id": "C10",
+      "title": "algorithm migration",
+      "expected_verdict": "indeterminate",
+      "verification_time": "2026-06-03T00:00:00Z",
+      "policy_override": {
+        "accepted_algorithm_profiles": [
+          "rsa-sha256+pqc"
+        ]
+      },
+      "packages": [
+        {
+          "role": "identity",
+          "id": "id-lambda",
+          "attestation_id": "C10-id-lambda",
+          "path": "corpus/generated/C10/aep/c10-id-lambda.aep",
+          "metadata": "corpus/generated/C10/metadata/c10-id-lambda.json",
+          "payload": "corpus/generated/C10/payloads/c10-id-lambda.txt"
+        },
+        {
+          "role": "action",
+          "id": "act-algorithm-transition",
+          "attestation_id": "C10-act-algorithm-transition",
+          "path": "corpus/generated/C10/aep/c10-act-algorithm-transition.aep",
+          "metadata": "corpus/generated/C10/metadata/c10-act-algorithm-transition.json",
+          "payload": "corpus/generated/C10/payloads/c10-act-algorithm-transition.txt"
+        }
+      ]
+    }
+  ]
+}

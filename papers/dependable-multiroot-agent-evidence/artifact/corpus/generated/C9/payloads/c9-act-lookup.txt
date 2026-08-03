@@ -1,0 +1,1 @@
+package requires live registry lookup

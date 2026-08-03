@@ -1,0 +1,910 @@
+{
+  "schema": "urn:tyche:multiroot-eatf-evaluation-results:1.0",
+  "artifact": "EATF-backed multi-root AI-agent evidence corpus",
+  "eatf_root": "vendor/eatf",
+  "cases_total": 10,
+  "cases_matched": 10,
+  "all_expectations_matched": true,
+  "results": [
+    {
+      "case_id": "C1",
+      "title": "multi-root success",
+      "expected_verdict": "accept",
+      "verdict": "accept",
+      "matched_expectation": true,
+      "reason_codes": [],
+      "reason_trace": [
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C1-id-alpha"
+        },
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C1-id-beta"
+        },
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C1-act-alpha"
+        },
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C1-act-beta"
+        },
+        {
+          "code": "identity-issuer",
+          "status": "pass",
+          "target": "C1-id-alpha"
+        },
+        {
+          "code": "identity-method",
+          "status": "pass",
+          "target": "C1-id-alpha"
+        },
+        {
+          "code": "identity-assurance",
+          "status": "pass",
+          "target": "C1-id-alpha"
+        },
+        {
+          "code": "identity-issuer",
+          "status": "pass",
+          "target": "C1-id-beta"
+        },
+        {
+          "code": "identity-method",
+          "status": "pass",
+          "target": "C1-id-beta"
+        },
+        {
+          "code": "identity-assurance",
+          "status": "pass",
+          "target": "C1-id-beta"
+        },
+        {
+          "code": "action-issuer",
+          "status": "pass",
+          "target": "C1-act-alpha"
+        },
+        {
+          "code": "identity-binding",
+          "status": "pass",
+          "target": "C1-act-alpha"
+        },
+        {
+          "code": "scope",
+          "status": "pass",
+          "target": "C1-act-alpha"
+        },
+        {
+          "code": "archive-material",
+          "status": "pass",
+          "target": "C1-act-alpha"
+        },
+        {
+          "code": "revocation-status",
+          "status": "pass",
+          "target": "C1-act-alpha"
+        },
+        {
+          "code": "algorithm-profile",
+          "status": "pass",
+          "target": "C1-act-alpha"
+        },
+        {
+          "code": "broker-policy",
+          "status": "pass",
+          "target": "C1-act-alpha"
+        },
+        {
+          "code": "action-issuer",
+          "status": "pass",
+          "target": "C1-act-beta"
+        },
+        {
+          "code": "identity-binding",
+          "status": "pass",
+          "target": "C1-act-beta"
+        },
+        {
+          "code": "scope",
+          "status": "pass",
+          "target": "C1-act-beta"
+        },
+        {
+          "code": "archive-material",
+          "status": "pass",
+          "target": "C1-act-beta"
+        },
+        {
+          "code": "revocation-status",
+          "status": "pass",
+          "target": "C1-act-beta"
+        },
+        {
+          "code": "algorithm-profile",
+          "status": "pass",
+          "target": "C1-act-beta"
+        },
+        {
+          "code": "broker-policy",
+          "status": "pass",
+          "target": "C1-act-beta"
+        }
+      ],
+      "metrics": {
+        "packages": 4,
+        "package_size_bytes": 19004,
+        "eatf_verify_ms": 1372.126,
+        "network_lookups_required": 0
+      },
+      "baselines": {
+        "mutable_log": "indeterminate",
+        "single_root_registry": "reject",
+        "detached_signature": "accept",
+        "broker_authoritative": "indeterminate"
+      }
+    },
+    {
+      "case_id": "C2",
+      "title": "non-brokered success",
+      "expected_verdict": "accept",
+      "verdict": "accept",
+      "matched_expectation": true,
+      "reason_codes": [],
+      "reason_trace": [
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C2-id-gamma"
+        },
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C2-act-gamma"
+        },
+        {
+          "code": "identity-issuer",
+          "status": "pass",
+          "target": "C2-id-gamma"
+        },
+        {
+          "code": "identity-method",
+          "status": "pass",
+          "target": "C2-id-gamma"
+        },
+        {
+          "code": "identity-assurance",
+          "status": "pass",
+          "target": "C2-id-gamma"
+        },
+        {
+          "code": "action-issuer",
+          "status": "pass",
+          "target": "C2-act-gamma"
+        },
+        {
+          "code": "identity-binding",
+          "status": "pass",
+          "target": "C2-act-gamma"
+        },
+        {
+          "code": "scope",
+          "status": "pass",
+          "target": "C2-act-gamma"
+        },
+        {
+          "code": "archive-material",
+          "status": "pass",
+          "target": "C2-act-gamma"
+        },
+        {
+          "code": "revocation-status",
+          "status": "pass",
+          "target": "C2-act-gamma"
+        },
+        {
+          "code": "algorithm-profile",
+          "status": "pass",
+          "target": "C2-act-gamma"
+        },
+        {
+          "code": "broker-absent",
+          "status": "pass",
+          "target": "C2-act-gamma"
+        }
+      ],
+      "metrics": {
+        "packages": 2,
+        "package_size_bytes": 9347,
+        "eatf_verify_ms": 671.616,
+        "network_lookups_required": 0
+      },
+      "baselines": {
+        "mutable_log": "indeterminate",
+        "single_root_registry": "reject",
+        "detached_signature": "accept",
+        "broker_authoritative": "indeterminate"
+      }
+    },
+    {
+      "case_id": "C3",
+      "title": "identity substitution",
+      "expected_verdict": "reject",
+      "verdict": "reject",
+      "matched_expectation": true,
+      "reason_codes": [
+        "identity-hash-missing"
+      ],
+      "reason_trace": [
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C3-id-delta"
+        },
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C3-act-substituted"
+        },
+        {
+          "code": "identity-issuer",
+          "status": "pass",
+          "target": "C3-id-delta"
+        },
+        {
+          "code": "identity-method",
+          "status": "pass",
+          "target": "C3-id-delta"
+        },
+        {
+          "code": "identity-assurance",
+          "status": "pass",
+          "target": "C3-id-delta"
+        },
+        {
+          "code": "action-issuer",
+          "status": "pass",
+          "target": "C3-act-substituted"
+        },
+        {
+          "code": "identity-hash-missing",
+          "status": "fail",
+          "target": "C3-act-substituted"
+        },
+        {
+          "code": "scope",
+          "status": "pass",
+          "target": "C3-act-substituted"
+        },
+        {
+          "code": "archive-material",
+          "status": "pass",
+          "target": "C3-act-substituted"
+        },
+        {
+          "code": "revocation-status",
+          "status": "pass",
+          "target": "C3-act-substituted"
+        },
+        {
+          "code": "algorithm-profile",
+          "status": "pass",
+          "target": "C3-act-substituted"
+        },
+        {
+          "code": "broker-absent",
+          "status": "pass",
+          "target": "C3-act-substituted"
+        }
+      ],
+      "metrics": {
+        "packages": 2,
+        "package_size_bytes": 9361,
+        "eatf_verify_ms": 642.836,
+        "network_lookups_required": 0
+      },
+      "baselines": {
+        "mutable_log": "indeterminate",
+        "single_root_registry": "reject",
+        "detached_signature": "accept",
+        "broker_authoritative": "indeterminate"
+      }
+    },
+    {
+      "case_id": "C4",
+      "title": "broker downgrade",
+      "expected_verdict": "reject",
+      "verdict": "reject",
+      "matched_expectation": true,
+      "reason_codes": [
+        "archive-material-insufficient",
+        "broker-policy-violation"
+      ],
+      "reason_trace": [
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C4-id-epsilon"
+        },
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C4-act-downgrade"
+        },
+        {
+          "code": "identity-issuer",
+          "status": "pass",
+          "target": "C4-id-epsilon"
+        },
+        {
+          "code": "identity-method",
+          "status": "pass",
+          "target": "C4-id-epsilon"
+        },
+        {
+          "code": "identity-assurance",
+          "status": "pass",
+          "target": "C4-id-epsilon"
+        },
+        {
+          "code": "action-issuer",
+          "status": "pass",
+          "target": "C4-act-downgrade"
+        },
+        {
+          "code": "identity-binding",
+          "status": "pass",
+          "target": "C4-act-downgrade"
+        },
+        {
+          "code": "scope",
+          "status": "pass",
+          "target": "C4-act-downgrade"
+        },
+        {
+          "code": "archive-material-insufficient",
+          "status": "fail",
+          "target": "C4-act-downgrade"
+        },
+        {
+          "code": "revocation-status",
+          "status": "pass",
+          "target": "C4-act-downgrade"
+        },
+        {
+          "code": "algorithm-profile",
+          "status": "pass",
+          "target": "C4-act-downgrade"
+        },
+        {
+          "code": "broker-policy-violation",
+          "status": "fail",
+          "target": "C4-act-downgrade"
+        }
+      ],
+      "metrics": {
+        "packages": 2,
+        "package_size_bytes": 9536,
+        "eatf_verify_ms": 676.915,
+        "network_lookups_required": 0
+      },
+      "baselines": {
+        "mutable_log": "indeterminate",
+        "single_root_registry": "reject",
+        "detached_signature": "indeterminate",
+        "broker_authoritative": "indeterminate"
+      }
+    },
+    {
+      "case_id": "C5",
+      "title": "issuer distrust after cutoff",
+      "expected_verdict": "reject",
+      "verdict": "reject",
+      "matched_expectation": true,
+      "reason_codes": [
+        "action-issuer-untrusted"
+      ],
+      "reason_trace": [
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C5-id-zeta"
+        },
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C5-act-retired"
+        },
+        {
+          "code": "identity-issuer",
+          "status": "pass",
+          "target": "C5-id-zeta"
+        },
+        {
+          "code": "identity-method",
+          "status": "pass",
+          "target": "C5-id-zeta"
+        },
+        {
+          "code": "identity-assurance",
+          "status": "pass",
+          "target": "C5-id-zeta"
+        },
+        {
+          "code": "action-issuer-untrusted",
+          "status": "fail",
+          "target": "C5-act-retired"
+        },
+        {
+          "code": "identity-binding",
+          "status": "pass",
+          "target": "C5-act-retired"
+        },
+        {
+          "code": "scope",
+          "status": "pass",
+          "target": "C5-act-retired"
+        },
+        {
+          "code": "archive-material",
+          "status": "pass",
+          "target": "C5-act-retired"
+        },
+        {
+          "code": "revocation-status",
+          "status": "pass",
+          "target": "C5-act-retired"
+        },
+        {
+          "code": "algorithm-profile",
+          "status": "pass",
+          "target": "C5-act-retired"
+        },
+        {
+          "code": "broker-absent",
+          "status": "pass",
+          "target": "C5-act-retired"
+        }
+      ],
+      "metrics": {
+        "packages": 2,
+        "package_size_bytes": 9327,
+        "eatf_verify_ms": 646.571,
+        "network_lookups_required": 0
+      },
+      "baselines": {
+        "mutable_log": "indeterminate",
+        "single_root_registry": "reject",
+        "detached_signature": "accept",
+        "broker_authoritative": "indeterminate"
+      }
+    },
+    {
+      "case_id": "C6",
+      "title": "stale revocation evidence",
+      "expected_verdict": "indeterminate",
+      "verdict": "indeterminate",
+      "matched_expectation": true,
+      "reason_codes": [
+        "revocation-stale"
+      ],
+      "reason_trace": [
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C6-id-eta"
+        },
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C6-act-stale-revocation"
+        },
+        {
+          "code": "identity-issuer",
+          "status": "pass",
+          "target": "C6-id-eta"
+        },
+        {
+          "code": "identity-method",
+          "status": "pass",
+          "target": "C6-id-eta"
+        },
+        {
+          "code": "identity-assurance",
+          "status": "pass",
+          "target": "C6-id-eta"
+        },
+        {
+          "code": "action-issuer",
+          "status": "pass",
+          "target": "C6-act-stale-revocation"
+        },
+        {
+          "code": "identity-binding",
+          "status": "pass",
+          "target": "C6-act-stale-revocation"
+        },
+        {
+          "code": "scope",
+          "status": "pass",
+          "target": "C6-act-stale-revocation"
+        },
+        {
+          "code": "archive-material",
+          "status": "pass",
+          "target": "C6-act-stale-revocation"
+        },
+        {
+          "code": "revocation-stale",
+          "status": "missing",
+          "target": "C6-act-stale-revocation"
+        },
+        {
+          "code": "algorithm-profile",
+          "status": "pass",
+          "target": "C6-act-stale-revocation"
+        },
+        {
+          "code": "broker-absent",
+          "status": "pass",
+          "target": "C6-act-stale-revocation"
+        }
+      ],
+      "metrics": {
+        "packages": 2,
+        "package_size_bytes": 9306,
+        "eatf_verify_ms": 653.501,
+        "network_lookups_required": 0
+      },
+      "baselines": {
+        "mutable_log": "indeterminate",
+        "single_root_registry": "reject",
+        "detached_signature": "accept",
+        "broker_authoritative": "indeterminate"
+      }
+    },
+    {
+      "case_id": "C7",
+      "title": "cross-policy replay",
+      "expected_verdict": "reject",
+      "verdict": "reject",
+      "matched_expectation": true,
+      "reason_codes": [
+        "scope-mismatch"
+      ],
+      "reason_trace": [
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C7-id-theta"
+        },
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C7-act-replayed"
+        },
+        {
+          "code": "identity-issuer",
+          "status": "pass",
+          "target": "C7-id-theta"
+        },
+        {
+          "code": "identity-method",
+          "status": "pass",
+          "target": "C7-id-theta"
+        },
+        {
+          "code": "identity-assurance",
+          "status": "pass",
+          "target": "C7-id-theta"
+        },
+        {
+          "code": "action-issuer",
+          "status": "pass",
+          "target": "C7-act-replayed"
+        },
+        {
+          "code": "identity-binding",
+          "status": "pass",
+          "target": "C7-act-replayed"
+        },
+        {
+          "code": "scope-mismatch",
+          "status": "fail",
+          "target": "C7-act-replayed"
+        },
+        {
+          "code": "archive-material",
+          "status": "pass",
+          "target": "C7-act-replayed"
+        },
+        {
+          "code": "revocation-status",
+          "status": "pass",
+          "target": "C7-act-replayed"
+        },
+        {
+          "code": "algorithm-profile",
+          "status": "pass",
+          "target": "C7-act-replayed"
+        },
+        {
+          "code": "broker-absent",
+          "status": "pass",
+          "target": "C7-act-replayed"
+        }
+      ],
+      "metrics": {
+        "packages": 2,
+        "package_size_bytes": 9353,
+        "eatf_verify_ms": 677.71,
+        "network_lookups_required": 0
+      },
+      "baselines": {
+        "mutable_log": "indeterminate",
+        "single_root_registry": "reject",
+        "detached_signature": "accept",
+        "broker_authoritative": "indeterminate"
+      }
+    },
+    {
+      "case_id": "C8",
+      "title": "offline validation",
+      "expected_verdict": "accept",
+      "verdict": "accept",
+      "matched_expectation": true,
+      "reason_codes": [],
+      "reason_trace": [
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C8-id-iota"
+        },
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C8-act-offline"
+        },
+        {
+          "code": "identity-issuer",
+          "status": "pass",
+          "target": "C8-id-iota"
+        },
+        {
+          "code": "identity-method",
+          "status": "pass",
+          "target": "C8-id-iota"
+        },
+        {
+          "code": "identity-assurance",
+          "status": "pass",
+          "target": "C8-id-iota"
+        },
+        {
+          "code": "action-issuer",
+          "status": "pass",
+          "target": "C8-act-offline"
+        },
+        {
+          "code": "identity-binding",
+          "status": "pass",
+          "target": "C8-act-offline"
+        },
+        {
+          "code": "scope",
+          "status": "pass",
+          "target": "C8-act-offline"
+        },
+        {
+          "code": "archive-material",
+          "status": "pass",
+          "target": "C8-act-offline"
+        },
+        {
+          "code": "revocation-status",
+          "status": "pass",
+          "target": "C8-act-offline"
+        },
+        {
+          "code": "algorithm-profile",
+          "status": "pass",
+          "target": "C8-act-offline"
+        },
+        {
+          "code": "broker-absent",
+          "status": "pass",
+          "target": "C8-act-offline"
+        }
+      ],
+      "metrics": {
+        "packages": 2,
+        "package_size_bytes": 9352,
+        "eatf_verify_ms": 665.498,
+        "network_lookups_required": 0
+      },
+      "baselines": {
+        "mutable_log": "indeterminate",
+        "single_root_registry": "reject",
+        "detached_signature": "accept",
+        "broker_authoritative": "indeterminate"
+      }
+    },
+    {
+      "case_id": "C9",
+      "title": "lookup dependency",
+      "expected_verdict": "reject",
+      "verdict": "reject",
+      "matched_expectation": true,
+      "reason_codes": [
+        "network-dependency-forbidden"
+      ],
+      "reason_trace": [
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C9-id-kappa"
+        },
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C9-act-lookup"
+        },
+        {
+          "code": "identity-issuer",
+          "status": "pass",
+          "target": "C9-id-kappa"
+        },
+        {
+          "code": "identity-method",
+          "status": "pass",
+          "target": "C9-id-kappa"
+        },
+        {
+          "code": "identity-assurance",
+          "status": "pass",
+          "target": "C9-id-kappa"
+        },
+        {
+          "code": "action-issuer",
+          "status": "pass",
+          "target": "C9-act-lookup"
+        },
+        {
+          "code": "identity-binding",
+          "status": "pass",
+          "target": "C9-act-lookup"
+        },
+        {
+          "code": "scope",
+          "status": "pass",
+          "target": "C9-act-lookup"
+        },
+        {
+          "code": "network-dependency-forbidden",
+          "status": "fail",
+          "target": "C9-act-lookup"
+        },
+        {
+          "code": "archive-material",
+          "status": "pass",
+          "target": "C9-act-lookup"
+        },
+        {
+          "code": "revocation-status",
+          "status": "pass",
+          "target": "C9-act-lookup"
+        },
+        {
+          "code": "algorithm-profile",
+          "status": "pass",
+          "target": "C9-act-lookup"
+        },
+        {
+          "code": "broker-absent",
+          "status": "pass",
+          "target": "C9-act-lookup"
+        }
+      ],
+      "metrics": {
+        "packages": 2,
+        "package_size_bytes": 9333,
+        "eatf_verify_ms": 644.514,
+        "network_lookups_required": 1
+      },
+      "baselines": {
+        "mutable_log": "indeterminate",
+        "single_root_registry": "reject",
+        "detached_signature": "accept",
+        "broker_authoritative": "indeterminate"
+      }
+    },
+    {
+      "case_id": "C10",
+      "title": "algorithm migration",
+      "expected_verdict": "indeterminate",
+      "verdict": "indeterminate",
+      "matched_expectation": true,
+      "reason_codes": [
+        "algorithm-unaccepted"
+      ],
+      "reason_trace": [
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C10-id-lambda"
+        },
+        {
+          "code": "eatf-package-valid",
+          "status": "pass",
+          "target": "C10-act-algorithm-transition"
+        },
+        {
+          "code": "identity-issuer",
+          "status": "pass",
+          "target": "C10-id-lambda"
+        },
+        {
+          "code": "identity-method",
+          "status": "pass",
+          "target": "C10-id-lambda"
+        },
+        {
+          "code": "identity-assurance",
+          "status": "pass",
+          "target": "C10-id-lambda"
+        },
+        {
+          "code": "action-issuer",
+          "status": "pass",
+          "target": "C10-act-algorithm-transition"
+        },
+        {
+          "code": "identity-binding",
+          "status": "pass",
+          "target": "C10-act-algorithm-transition"
+        },
+        {
+          "code": "scope",
+          "status": "pass",
+          "target": "C10-act-algorithm-transition"
+        },
+        {
+          "code": "archive-material",
+          "status": "pass",
+          "target": "C10-act-algorithm-transition"
+        },
+        {
+          "code": "revocation-status",
+          "status": "pass",
+          "target": "C10-act-algorithm-transition"
+        },
+        {
+          "code": "algorithm-unaccepted",
+          "status": "missing",
+          "target": "C10-act-algorithm-transition"
+        },
+        {
+          "code": "broker-absent",
+          "status": "pass",
+          "target": "C10-act-algorithm-transition"
+        }
+      ],
+      "metrics": {
+        "packages": 2,
+        "package_size_bytes": 9403,
+        "eatf_verify_ms": 665.391,
+        "network_lookups_required": 0
+      },
+      "baselines": {
+        "mutable_log": "indeterminate",
+        "single_root_registry": "reject",
+        "detached_signature": "accept",
+        "broker_authoritative": "indeterminate"
+      }
+    }
+  ]
+}

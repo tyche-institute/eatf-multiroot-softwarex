@@ -1,0 +1,40 @@
+name: Reproduce SoftwareX artifact
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Build corpus
+        run: python3 papers/dependable-multiroot-agent-evidence/artifact/scripts/build_eatf_corpus.py
+      - name: Run evaluation
+        run: python3 papers/dependable-multiroot-agent-evidence/artifact/scripts/run_evaluation.py
+      - name: Require all expected verdicts
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          result = json.loads(Path(
+              "papers/dependable-multiroot-agent-evidence/artifact/results/evaluation-results.json"
+          ).read_text())
+          assert result["cases_total"] == 10
+          assert result["cases_matched"] == 10
+          assert result["all_expectations_matched"] is True
+          print("Verified: 10/10 corpus cases matched expected verdicts")
+          PY

@@ -1,0 +1,32 @@
+{
+  "policy_id": "org-a-offline-multiroot-v1",
+  "offline_only": true,
+  "trusted_identity_issuers": ["identity-root-a", "identity-root-b"],
+  "trusted_action_issuers": ["action-root-a", "action-root-b", "action-root-retired"],
+  "accepted_identity_methods": ["did:web", "x509-dev-anchor"],
+  "min_identity_assurance": "medium",
+  "accepted_scopes": ["agent:records", "agent:analysis"],
+  "require_embedded_validation_material": true,
+  "accepted_algorithm_profiles": ["rsa-sha256-transitional", "rsa-sha256+pqc"],
+  "archive_algorithm_profiles": ["rsa-sha256-transitional"],
+  "archive_mode": false,
+  "revocation": {
+    "required": true,
+    "max_age_days": 7,
+    "missing": "reject",
+    "stale": "indeterminate"
+  },
+  "broker": {
+    "trusted_brokers": ["broker-eu-1"],
+    "min_assurance": "medium",
+    "require_exposed_routing": true,
+    "require_validation_material": true
+  },
+  "trust_cutoffs": {
+    "action-root-retired": {
+      "after": "2026-06-01T00:00:00Z",
+      "allow_issued_before_cutoff": true
+    }
+  }
+}
+
