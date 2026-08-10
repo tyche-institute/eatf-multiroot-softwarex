@@ -1,0 +1,1 @@
+agent-gamma executed without broker metadata (replayed)

@@ -1,16 +1,28 @@
-# EATF-MultiRoot SoftwareX artifact v0.1
+# EATF-MultiRoot SoftwareX artifact
 
 This repository is the public, paper-specific preservation copy of the
-software and evaluation corpus reviewed with SoftwareX manuscript
-`SOFTX-D-26-00623`, *EATF-MultiRoot: A Reproducible Verifier and Corpus for
-AI-Agent Evidence Packages*.
+software and evaluation corpus for SoftwareX manuscript `SOFTX-D-26-00623`,
+*EATF-MultiRoot: A Reproducible Verifier and Corpus for AI-Agent Evidence
+Packages*.
 
-The reviewed tree is preserved without modification at
+The tree lives at
 [`papers/dependable-multiroot-agent-evidence/artifact`](papers/dependable-multiroot-agent-evidence/artifact).
-The release asset `softwarex-eatf-multiroot-artifact-v0.1.zip` is the exact
-archive submitted to the journal.
+`main` carries the current revision (v0.2.2); the tree reviewed with the
+original submission is preserved without modification at tag
+`eatf-multiroot-softwarex-v0.1`.
 
-## Immutable identity
+## Releases
+
+| Tag | What it is |
+|---|---|
+| `eatf-multiroot-softwarex-v0.1` | the reviewed submission; its release asset `softwarex-eatf-multiroot-artifact-v0.1.zip` is the exact archive submitted to the journal |
+| `eatf-multiroot-softwarex-v0.2`, `…-v0.2.1` | revision capsules published as release assets while the repository tree still carried v0.1 (superseded; kept for the record) |
+| `eatf-multiroot-softwarex-v0.2.2` | the revision: repository tree and release capsule are byte-identical (`git archive` of the tagged tree) |
+
+Zenodo: concept DOI `10.5281/zenodo.20777207`; each release capsule is
+archived under its own version DOI.
+
+## Immutable identity of the reviewed version
 
 - SoftwareX release: `eatf-multiroot-softwarex-v0.1`
 - source commit in the former repository:
@@ -26,15 +38,24 @@ code.
 ## Reproduce
 
 Requires Python 3 and Node.js 20 or later. Runtime JavaScript dependencies are
-vendored to permit offline evaluation.
+vendored to permit offline evaluation; no network access is needed at any
+stage.
 
 ```sh
 python3 papers/dependable-multiroot-agent-evidence/artifact/scripts/build_eatf_corpus.py
 python3 papers/dependable-multiroot-agent-evidence/artifact/scripts/run_evaluation.py
+python3 papers/dependable-multiroot-agent-evidence/artifact/scripts/run_policy_variation.py
 ```
 
-Expected result: all 10 corpus cases match their expected verdicts. The
-continuous-integration workflow runs the same commands.
+Expected results: all 10 reviewed seed cases match their expected verdicts,
+and the 192 oracle-derived mutant cases reach 192/192 oracle-vs-pipeline
+agreement under each of the two relying-party policies (40 verdicts move
+between the policies, each attributable to a policy knob that moved). The
+continuous-integration workflow runs the same commands and asserts the same
+counts. See the artifact
+[`README.md`](papers/dependable-multiroot-agent-evidence/artifact/README.md)
+for the full output map, including the adversarial-conformance transcripts
+and the independent OpenSSL package-layer check.
 
 ## Integrity and security notes
 

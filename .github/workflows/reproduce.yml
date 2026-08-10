@@ -11,7 +11,7 @@ permissions:
 jobs:
   reproduce:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -37,4 +37,19 @@ jobs:
           assert result["cases_matched"] == 10
           assert result["all_expectations_matched"] is True
           print("Verified: 10/10 corpus cases matched expected verdicts")
+          PY
+      - name: Two-policy variation (oracle re-derived per policy)
+        run: python3 papers/dependable-multiroot-agent-evidence/artifact/scripts/run_policy_variation.py
+      - name: Require per-policy agreement 192/192
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          report = Path(
+              "papers/dependable-multiroot-agent-evidence/artifact/"
+              "results-policy-variation/policy-variation-report.md"
+          ).read_text()
+          assert report.count("**192/192**") == 2, report
+          assert "40 of 192 verdicts change" in report, report
+          print("Verified: 192/192 under each policy; 40 attributable moves")
           PY

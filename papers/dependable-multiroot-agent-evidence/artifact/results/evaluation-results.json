@@ -138,11 +138,11 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19004,
-        "eatf_verify_ms": 1372.126,
+        "eatf_verify_ms": 364.074,
         "network_lookups_required": 0
       },
       "baselines": {
-        "mutable_log": "indeterminate",
+        "mutable_log": "accept",
         "single_root_registry": "reject",
         "detached_signature": "accept",
         "broker_authoritative": "indeterminate"
@@ -220,12 +220,12 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9347,
-        "eatf_verify_ms": 671.616,
+        "eatf_verify_ms": 173.847,
         "network_lookups_required": 0
       },
       "baselines": {
-        "mutable_log": "indeterminate",
-        "single_root_registry": "reject",
+        "mutable_log": "accept",
+        "single_root_registry": "accept",
         "detached_signature": "accept",
         "broker_authoritative": "indeterminate"
       }
@@ -304,12 +304,12 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9361,
-        "eatf_verify_ms": 642.836,
+        "eatf_verify_ms": 177.451,
         "network_lookups_required": 0
       },
       "baselines": {
-        "mutable_log": "indeterminate",
-        "single_root_registry": "reject",
+        "mutable_log": "accept",
+        "single_root_registry": "accept",
         "detached_signature": "accept",
         "broker_authoritative": "indeterminate"
       }
@@ -389,12 +389,12 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9536,
-        "eatf_verify_ms": 676.915,
+        "eatf_verify_ms": 178.586,
         "network_lookups_required": 0
       },
       "baselines": {
-        "mutable_log": "indeterminate",
-        "single_root_registry": "reject",
+        "mutable_log": "accept",
+        "single_root_registry": "accept",
         "detached_signature": "indeterminate",
         "broker_authoritative": "indeterminate"
       }
@@ -473,11 +473,11 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9327,
-        "eatf_verify_ms": 646.571,
+        "eatf_verify_ms": 174.368,
         "network_lookups_required": 0
       },
       "baselines": {
-        "mutable_log": "indeterminate",
+        "mutable_log": "accept",
         "single_root_registry": "reject",
         "detached_signature": "accept",
         "broker_authoritative": "indeterminate"
@@ -557,12 +557,12 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9306,
-        "eatf_verify_ms": 653.501,
+        "eatf_verify_ms": 177.97,
         "network_lookups_required": 0
       },
       "baselines": {
-        "mutable_log": "indeterminate",
-        "single_root_registry": "reject",
+        "mutable_log": "accept",
+        "single_root_registry": "accept",
         "detached_signature": "accept",
         "broker_authoritative": "indeterminate"
       }
@@ -641,12 +641,12 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9353,
-        "eatf_verify_ms": 677.71,
+        "eatf_verify_ms": 185.559,
         "network_lookups_required": 0
       },
       "baselines": {
-        "mutable_log": "indeterminate",
-        "single_root_registry": "reject",
+        "mutable_log": "accept",
+        "single_root_registry": "accept",
         "detached_signature": "accept",
         "broker_authoritative": "indeterminate"
       }
@@ -723,11 +723,11 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9352,
-        "eatf_verify_ms": 665.498,
+        "eatf_verify_ms": 182.318,
         "network_lookups_required": 0
       },
       "baselines": {
-        "mutable_log": "indeterminate",
+        "mutable_log": "accept",
         "single_root_registry": "reject",
         "detached_signature": "accept",
         "broker_authoritative": "indeterminate"
@@ -812,12 +812,12 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9333,
-        "eatf_verify_ms": 644.514,
+        "eatf_verify_ms": 197.396,
         "network_lookups_required": 1
       },
       "baselines": {
-        "mutable_log": "indeterminate",
-        "single_root_registry": "reject",
+        "mutable_log": "accept",
+        "single_root_registry": "accept",
         "detached_signature": "accept",
         "broker_authoritative": "indeterminate"
       }
@@ -896,12 +896,12 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9403,
-        "eatf_verify_ms": 665.391,
+        "eatf_verify_ms": 177.615,
         "network_lookups_required": 0
       },
       "baselines": {
-        "mutable_log": "indeterminate",
-        "single_root_registry": "reject",
+        "mutable_log": "accept",
+        "single_root_registry": "accept",
         "detached_signature": "accept",
         "broker_authoritative": "indeterminate"
       }

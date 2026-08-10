@@ -22,8 +22,9 @@ from eatf_policy_overlay import PackageRecord, evaluate_case, load_policy  # noq
 ARTIFACT_ROOT = Path(__file__).resolve().parents[1]
 EATF_ROOT = ARTIFACT_ROOT / "vendor/eatf"
 EATF_VERIFY = EATF_ROOT / "cli/eatf-verify/bin/eatf-verify.js"
-GENERATED = ARTIFACT_ROOT / "corpus/generated"
-RESULTS = ARTIFACT_ROOT / "results"
+# v0.2: env-var overrides for the mutation pipeline; defaults = v0.1 behaviour.
+GENERATED = Path(os.environ.get("CORPUS_GENERATED", ARTIFACT_ROOT / "corpus/generated"))
+RESULTS = Path(os.environ.get("RESULTS_DIR", ARTIFACT_ROOT / "results"))
 
 
 def main() -> int:
@@ -36,7 +37,8 @@ def main() -> int:
 
     RESULTS.mkdir(parents=True, exist_ok=True)
     index = json.loads((GENERATED / "corpus-index.json").read_text(encoding="utf-8"))
-    base_policy = load_policy(ARTIFACT_ROOT / "policies/org-a-policy.json")
+    base_policy = load_policy(Path(os.environ.get("POLICY_FILE",
+                                                 ARTIFACT_ROOT / "policies/org-a-policy.json")))
 
     case_results: list[dict[str, Any]] = []
     for case in index["cases"]:

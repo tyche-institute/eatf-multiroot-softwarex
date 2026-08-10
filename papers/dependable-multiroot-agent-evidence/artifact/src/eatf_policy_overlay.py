@@ -104,7 +104,9 @@ def evaluate_case(
         ):
             add_reason(reasons, "identity-assurance", "pass", identity.attestation_id)
         else:
-            add_reason(reasons, "identity-method-unaccepted", "fail", identity.attestation_id)
+            # v0.2 fix: this branch previously emitted "identity-method-unaccepted"
+            # (a copy of the method check's code), mislabelling WHY the case failed.
+            add_reason(reasons, "identity-assurance-insufficient", "fail", identity.attestation_id)
 
     seen_sequences: set[tuple[str, int]] = set()
     for action in actions:
@@ -251,16 +253,24 @@ def evaluate_broker(
 
 
 def baseline_verdicts(case: dict[str, Any], records: list[PackageRecord]) -> dict[str, str]:
-    if case.get("mutable_log_only"):
-        mutable_log = "accept"
-    else:
-        mutable_log = "indeterminate"
+    # v0.2: two baseline models corrected so each is non-vacuous on this corpus.
+    #
+    # mutable_log — a verifier that trusts the runtime's own log accepts whatever
+    # the log asserts. Every generated case has a log assertion by construction,
+    # so this model accepts every case (v0.1 keyed on a  flag
+    # no corpus case set, making the model vacuously indeterminate).
+    mutable_log = "accept"
 
+    # single_root_registry — all trust chains to registry family A only: accept
+    # iff every issuer in the case belongs to the "-root-a" family, reject any
+    # mixed-root or non-A evidence. (v0.1 compared the issuer set to the literal
+    # {"root-a"}, which no corpus issuer ever used, making the model vacuously
+    # reject-everything.)
     issuers = {
         str(record.metadata.get("identity_issuer") or record.metadata.get("action_issuer"))
         for record in records
     }
-    single_root = "accept" if issuers == {"root-a"} else "reject"
+    single_root = "accept" if issuers and all(i.endswith("-root-a") for i in issuers) else "reject"
 
     detached_signature = (
         "accept"

@@ -1,0 +1,24 @@
+{
+  "action_type": "identity.assert",
+  "agent_id": "urn:eatf:agent:agent-alpha",
+  "attestation_id": "P-0313-identity-assurance-low--scope-unknown-id-alpha",
+  "case_id": "P-0313-identity-assurance-low--scope-unknown",
+  "created_at": "2026-06-02T12:00:00Z",
+  "evidence_role": "identity",
+  "format_version": "ATAP-1.0",
+  "identity_assurance": "low",
+  "identity_issuer": "identity-root-a",
+  "identity_method": "did:web",
+  "identity_scope": [
+    "agent:records"
+  ],
+  "identity_subject": "agent-alpha",
+  "policy_coverage": 1.0,
+  "policy_decision": "allow",
+  "policy_id": "org-a-offline-multiroot-v1",
+  "policy_version": "1.0",
+  "schema": "urn:eatf:spec:aep:metadata:1.0",
+  "valid_from": "2026-01-01T00:00:00Z",
+  "valid_to": "2027-01-01T00:00:00Z",
+  "validation_material_embedded": true
+}

@@ -38,8 +38,11 @@ def main() -> int:
     if not EATF_SIGN.exists() or not EATF_VERIFY.exists():
         raise SystemExit(f"EATF CLI missing under {EATF_ROOT}")
 
-    case_plan = json.loads((ARTIFACT_ROOT / "corpus/case_plan.json").read_text(encoding="utf-8"))
-    generated = ARTIFACT_ROOT / "corpus/generated"
+    # v0.2: CORPUS_PLAN / CORPUS_OUT env vars let the mutation pipeline reuse
+    # this generator unchanged; defaults preserve v0.1 behaviour exactly.
+    plan_path = Path(os.environ.get("CORPUS_PLAN", ARTIFACT_ROOT / "corpus/case_plan.json"))
+    case_plan = json.loads(plan_path.read_text(encoding="utf-8"))
+    generated = Path(os.environ.get("CORPUS_OUT", ARTIFACT_ROOT / "corpus/generated"))
     if generated.exists():
         shutil.rmtree(generated)
     generated.mkdir(parents=True)

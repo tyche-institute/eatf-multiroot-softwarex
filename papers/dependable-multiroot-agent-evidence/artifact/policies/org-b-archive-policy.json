@@ -1,0 +1,32 @@
+{
+  "policy_id": "org-b-archive-multiroot-v1",
+  "_note": "Second relying-party configuration (v0.2, R1.7(ii)): a long-term ARCHIVE reader. It grandfathers legacy algorithm profiles (archive_mode), tolerates stale revocation evidence because the evidence is historical, admits a wider set of scopes and identity methods, and drops the broker-assurance floor by one rank. Same corpus, different policy: the point is that verdicts move where the policy moved and nowhere else.",
+  "offline_only": true,
+  "trusted_identity_issuers": ["identity-root-a", "identity-root-b"],
+  "trusted_action_issuers": ["action-root-a", "action-root-b", "action-root-retired"],
+  "accepted_identity_methods": ["did:web", "x509-dev-anchor", "did:key"],
+  "min_identity_assurance": "low",
+  "accepted_scopes": ["agent:records", "agent:analysis", "agent:payments"],
+  "require_embedded_validation_material": true,
+  "accepted_algorithm_profiles": ["rsa-sha256+pqc"],
+  "archive_algorithm_profiles": ["rsa-sha256-transitional", "sphincs-experimental"],
+  "archive_mode": true,
+  "revocation": {
+    "required": true,
+    "max_age_days": 3650,
+    "missing": "indeterminate",
+    "stale": "indeterminate"
+  },
+  "broker": {
+    "trusted_brokers": ["broker-eu-1"],
+    "min_assurance": "low",
+    "require_exposed_routing": true,
+    "require_validation_material": true
+  },
+  "trust_cutoffs": {
+    "action-root-retired": {
+      "after": "2026-06-01T00:00:00Z",
+      "allow_issued_before_cutoff": true
+    }
+  }
+}
