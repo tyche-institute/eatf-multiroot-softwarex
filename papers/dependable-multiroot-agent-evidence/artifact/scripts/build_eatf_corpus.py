@@ -40,9 +40,11 @@ def main() -> int:
 
     # v0.2: CORPUS_PLAN / CORPUS_OUT env vars let the mutation pipeline reuse
     # this generator unchanged; defaults preserve v0.1 behaviour exactly.
-    plan_path = Path(os.environ.get("CORPUS_PLAN", ARTIFACT_ROOT / "corpus/case_plan.json"))
+    # Resolved against the caller's working directory so a relative override
+    # works from anywhere; recorded paths stay artifact-relative below.
+    plan_path = Path(os.environ.get("CORPUS_PLAN", ARTIFACT_ROOT / "corpus/case_plan.json")).resolve()
     case_plan = json.loads(plan_path.read_text(encoding="utf-8"))
-    generated = Path(os.environ.get("CORPUS_OUT", ARTIFACT_ROOT / "corpus/generated"))
+    generated = Path(os.environ.get("CORPUS_OUT", ARTIFACT_ROOT / "corpus/generated")).resolve()
     if generated.exists():
         shutil.rmtree(generated)
     generated.mkdir(parents=True)
@@ -188,9 +190,9 @@ def sign_package(
         "role": role,
         "id": item["id"],
         "attestation_id": metadata["attestation_id"],
-        "path": str(aep_path.relative_to(ARTIFACT_ROOT)),
-        "metadata": str(metadata_path.relative_to(ARTIFACT_ROOT)),
-        "payload": str(payload_path.relative_to(ARTIFACT_ROOT)),
+        "path": portable_artifact_path(aep_path),
+        "metadata": portable_artifact_path(metadata_path),
+        "payload": portable_artifact_path(payload_path),
     }
 
 

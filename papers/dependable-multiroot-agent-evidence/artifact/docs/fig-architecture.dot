@@ -3,11 +3,13 @@
 // Strict B&W: black on white, no fills, square corners.
 digraph EATFMultiRoot {
   rankdir=TB;
-  node [shape=box, style=solid, color=black, fontcolor=black, fontname="Helvetica", fontsize=10];
-  edge [color=black, fontname="Helvetica", fontsize=9, arrowsize=0.7];
+  ranksep=0.30;
+  nodesep=0.28;
+  node [shape=box, style=solid, color=black, fontcolor=black, fontname="Helvetica", fontsize=13];
+  edge [color=black, fontname="Helvetica", fontsize=11, arrowsize=0.7];
 
   subgraph cluster_plan {
-    label="Case plans"; color=black; fontname="Helvetica"; fontsize=10;
+    label="Case plans"; color=black; fontname="Helvetica"; fontsize=12;
     seeds  [label="case_plan.json\n10 reviewed seed scenarios"];
     mutgen [label="generate_mutants.py  (v0.2)\n25 typed mutation operators"];
     mplan  [label="case_plan_mutants.json\n192 derived-fault cases"];
@@ -16,14 +18,14 @@ digraph EATFMultiRoot {
   oracle [label="spec_oracle.py  (v0.2)\nderives every expected verdict\nfrom the declarative policy"];
 
   subgraph cluster_gen {
-    label="Corpus construction (Python)"; color=black; fontname="Helvetica"; fontsize=10;
+    label="Corpus construction (Python)"; color=black; fontname="Helvetica"; fontsize=12;
     gen    [label="build_eatf_corpus.py"];
     sign   [label="eatf-sign (Node.js,\nvendored EATF substrate)"];
     pkgs   [label="Signed .aep evidence packages\n22 reviewed + 705 mutant"];
   }
 
   subgraph cluster_ver {
-    label="Verification (Python + vendored Node.js)"; color=black; fontname="Helvetica"; fontsize=10;
+    label="Verification (Python + vendored Node.js)"; color=black; fontname="Helvetica"; fontsize=12;
     verify [label="eatf-verify (Node.js)\npackage layer: signature,\ncanonical form, timestamp,\nreceipt integrity"];
     overlay[label="eatf_policy_overlay.py\nmulti-root policy layer:\nissuer trust, broker assurance,\nrevocation age, scope\nand algorithm policy"];
   }

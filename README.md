@@ -60,15 +60,26 @@ and the independent OpenSSL package-layer check.
 ## Integrity and security notes
 
 An independent pre-publication run on 3 August 2026 reproduced 10/10 expected
-verdicts. All 695 entries named in the artifact's internal manifest matched
-their recorded hashes. The manifest is intentionally treated as a partial
-research-artifact manifest: it does not enumerate every file in the vendored
-runtime.
+verdicts on the reviewed v0.1 tree. For the current revision, `bash
+scripts/run_all.sh` reproduces every reported number and ends with
+`scripts/verify_manifest.py`, which checks the artifact against its own
+SHA-256 manifest: 3,875 entries, no missing files, no hash mismatches and no
+file outside the manifest. The public CI workflow runs the same sequence on a
+clean hosted runner at every push.
 
 The tree contains the documented development-only key
 `artifact/vendor/eatf/test-vectors/keys/dev-rsa-4096.key`. It is a public test
-fixture, not a production secret or trust anchor. A targeted credential scan
-found no service credentials or access tokens.
+fixture, not a production secret or trust anchor, and the corpus is signed with
+it deliberately.
+
+The vendored runtime is a pruned snapshot of an upstream project. In releases
+up to v0.2.2 that snapshot carried upstream's full platform README, which
+included unrelated internal material — demo account passwords for a local
+demo profile, an internal project codename and internal source paths. From
+v0.2.3 it is replaced by a provenance stub describing only what this artifact
+executes. The affected demo credentials belong to a local development profile,
+not to any deployed service; earlier tags are left untouched because they are
+on the journal's editorial record.
 
 ## Claim boundary
 

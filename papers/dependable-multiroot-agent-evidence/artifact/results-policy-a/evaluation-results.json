@@ -140,7 +140,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19307,
-        "eatf_verify_ms": 370.337,
+        "eatf_verify_ms": 362.85,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -284,7 +284,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19308,
-        "eatf_verify_ms": 351.898,
+        "eatf_verify_ms": 368.112,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -428,7 +428,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19293,
-        "eatf_verify_ms": 355.906,
+        "eatf_verify_ms": 354.944,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -570,7 +570,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19416,
-        "eatf_verify_ms": 356.201,
+        "eatf_verify_ms": 346.435,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -714,7 +714,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19307,
-        "eatf_verify_ms": 369.522,
+        "eatf_verify_ms": 338.122,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -858,7 +858,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19308,
-        "eatf_verify_ms": 354.048,
+        "eatf_verify_ms": 352.63,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -1002,7 +1002,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19293,
-        "eatf_verify_ms": 353.782,
+        "eatf_verify_ms": 353.875,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -1144,7 +1144,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19416,
-        "eatf_verify_ms": 346.041,
+        "eatf_verify_ms": 366.277,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -1288,7 +1288,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19287,
-        "eatf_verify_ms": 344.268,
+        "eatf_verify_ms": 351.282,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -1432,7 +1432,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19432,
-        "eatf_verify_ms": 362.675,
+        "eatf_verify_ms": 360.693,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -1574,7 +1574,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19442,
-        "eatf_verify_ms": 355.373,
+        "eatf_verify_ms": 355.055,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -1719,7 +1719,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19272,
-        "eatf_verify_ms": 364.568,
+        "eatf_verify_ms": 360.996,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -1863,7 +1863,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19360,
-        "eatf_verify_ms": 345.994,
+        "eatf_verify_ms": 340.463,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -2007,7 +2007,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19206,
-        "eatf_verify_ms": 363.601,
+        "eatf_verify_ms": 349.718,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -2156,7 +2156,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19393,
-        "eatf_verify_ms": 353.873,
+        "eatf_verify_ms": 344.35,
         "network_lookups_required": 1
       },
       "baselines": {
@@ -2301,7 +2301,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19355,
-        "eatf_verify_ms": 352.741,
+        "eatf_verify_ms": 354.803,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -2445,7 +2445,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19201,
-        "eatf_verify_ms": 373.313,
+        "eatf_verify_ms": 341.675,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -2589,7 +2589,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19264,
-        "eatf_verify_ms": 360.586,
+        "eatf_verify_ms": 369.511,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -2731,7 +2731,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19374,
-        "eatf_verify_ms": 373.29,
+        "eatf_verify_ms": 360.564,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -2875,7 +2875,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19374,
-        "eatf_verify_ms": 362.682,
+        "eatf_verify_ms": 355.393,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -3019,7 +3019,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19241,
-        "eatf_verify_ms": 362.645,
+        "eatf_verify_ms": 362.799,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -3161,7 +3161,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19285,
-        "eatf_verify_ms": 365.878,
+        "eatf_verify_ms": 353.307,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -3305,7 +3305,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19234,
-        "eatf_verify_ms": 357.109,
+        "eatf_verify_ms": 359.501,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -3449,7 +3449,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19273,
-        "eatf_verify_ms": 359.049,
+        "eatf_verify_ms": 353.769,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -3591,7 +3591,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19396,
-        "eatf_verify_ms": 380.432,
+        "eatf_verify_ms": 371.997,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -3735,7 +3735,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19423,
-        "eatf_verify_ms": 349.385,
+        "eatf_verify_ms": 359.702,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -3877,7 +3877,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19025,
-        "eatf_verify_ms": 358.666,
+        "eatf_verify_ms": 362.805,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -4021,7 +4021,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19287,
-        "eatf_verify_ms": 349.558,
+        "eatf_verify_ms": 364.462,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -4165,7 +4165,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19432,
-        "eatf_verify_ms": 360.004,
+        "eatf_verify_ms": 363.436,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -4307,7 +4307,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19442,
-        "eatf_verify_ms": 344.325,
+        "eatf_verify_ms": 357.02,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -4452,7 +4452,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19273,
-        "eatf_verify_ms": 362.559,
+        "eatf_verify_ms": 347.333,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -4596,7 +4596,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19363,
-        "eatf_verify_ms": 365.43,
+        "eatf_verify_ms": 354.599,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -4740,7 +4740,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19204,
-        "eatf_verify_ms": 359.683,
+        "eatf_verify_ms": 355.095,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -4889,7 +4889,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19393,
-        "eatf_verify_ms": 347.547,
+        "eatf_verify_ms": 359.69,
         "network_lookups_required": 1
       },
       "baselines": {
@@ -5034,7 +5034,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19355,
-        "eatf_verify_ms": 363.884,
+        "eatf_verify_ms": 345.061,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -5178,7 +5178,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19201,
-        "eatf_verify_ms": 353.054,
+        "eatf_verify_ms": 347.871,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -5322,7 +5322,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19264,
-        "eatf_verify_ms": 359.525,
+        "eatf_verify_ms": 351.876,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -5464,7 +5464,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19374,
-        "eatf_verify_ms": 346.886,
+        "eatf_verify_ms": 355.1,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -5608,7 +5608,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19374,
-        "eatf_verify_ms": 378.454,
+        "eatf_verify_ms": 349.836,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -5752,7 +5752,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19241,
-        "eatf_verify_ms": 342.947,
+        "eatf_verify_ms": 373.101,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -5894,7 +5894,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19285,
-        "eatf_verify_ms": 341.733,
+        "eatf_verify_ms": 370.696,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -6038,7 +6038,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19234,
-        "eatf_verify_ms": 359.688,
+        "eatf_verify_ms": 369.368,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -6182,7 +6182,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19273,
-        "eatf_verify_ms": 359.751,
+        "eatf_verify_ms": 352.761,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -6324,7 +6324,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19396,
-        "eatf_verify_ms": 361.111,
+        "eatf_verify_ms": 364.984,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -6468,7 +6468,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19423,
-        "eatf_verify_ms": 385.077,
+        "eatf_verify_ms": 346.261,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -6610,7 +6610,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19025,
-        "eatf_verify_ms": 361.271,
+        "eatf_verify_ms": 352.905,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -6799,7 +6799,7 @@
       "metrics": {
         "packages": 5,
         "package_size_bytes": 24327,
-        "eatf_verify_ms": 453.571,
+        "eatf_verify_ms": 430.573,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -6883,7 +6883,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9499,
-        "eatf_verify_ms": 177.565,
+        "eatf_verify_ms": 178.894,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -6967,7 +6967,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9501,
-        "eatf_verify_ms": 175.616,
+        "eatf_verify_ms": 171.058,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -7051,7 +7051,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9491,
-        "eatf_verify_ms": 185.435,
+        "eatf_verify_ms": 177.577,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -7133,7 +7133,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9554,
-        "eatf_verify_ms": 177.057,
+        "eatf_verify_ms": 173.699,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -7217,7 +7217,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9489,
-        "eatf_verify_ms": 180.647,
+        "eatf_verify_ms": 188.307,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -7301,7 +7301,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9564,
-        "eatf_verify_ms": 182.334,
+        "eatf_verify_ms": 183.622,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -7383,7 +7383,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9569,
-        "eatf_verify_ms": 176.072,
+        "eatf_verify_ms": 182.218,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -7467,7 +7467,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9507,
-        "eatf_verify_ms": 174.101,
+        "eatf_verify_ms": 178.539,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -7551,7 +7551,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9528,
-        "eatf_verify_ms": 185.258,
+        "eatf_verify_ms": 169.99,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -7635,7 +7635,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9449,
-        "eatf_verify_ms": 177.628,
+        "eatf_verify_ms": 169.906,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -7724,7 +7724,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9541,
-        "eatf_verify_ms": 172.98,
+        "eatf_verify_ms": 177.715,
         "network_lookups_required": 1
       },
       "baselines": {
@@ -7808,7 +7808,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9523,
-        "eatf_verify_ms": 182.092,
+        "eatf_verify_ms": 170.657,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -7892,7 +7892,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9419,
-        "eatf_verify_ms": 172.875,
+        "eatf_verify_ms": 181.446,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -7976,7 +7976,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9477,
-        "eatf_verify_ms": 181.342,
+        "eatf_verify_ms": 173.462,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -8058,7 +8058,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9532,
-        "eatf_verify_ms": 179.062,
+        "eatf_verify_ms": 185.119,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -8142,7 +8142,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9532,
-        "eatf_verify_ms": 183.472,
+        "eatf_verify_ms": 188.261,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -8226,7 +8226,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9464,
-        "eatf_verify_ms": 190.417,
+        "eatf_verify_ms": 172.455,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -8308,7 +8308,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9483,
-        "eatf_verify_ms": 180.634,
+        "eatf_verify_ms": 192.208,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -8392,7 +8392,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9681,
-        "eatf_verify_ms": 175.681,
+        "eatf_verify_ms": 175.833,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -8521,7 +8521,7 @@
       "metrics": {
         "packages": 3,
         "package_size_bytes": 14353,
-        "eatf_verify_ms": 268.319,
+        "eatf_verify_ms": 266.136,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -8605,7 +8605,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9504,
-        "eatf_verify_ms": 179.495,
+        "eatf_verify_ms": 182.062,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -8689,7 +8689,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9506,
-        "eatf_verify_ms": 170.808,
+        "eatf_verify_ms": 172.825,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -8773,7 +8773,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9496,
-        "eatf_verify_ms": 180.612,
+        "eatf_verify_ms": 180.442,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -8855,7 +8855,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9559,
-        "eatf_verify_ms": 173.984,
+        "eatf_verify_ms": 182.45,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -8939,7 +8939,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9494,
-        "eatf_verify_ms": 184.079,
+        "eatf_verify_ms": 180.863,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -9023,7 +9023,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9569,
-        "eatf_verify_ms": 193.041,
+        "eatf_verify_ms": 172.241,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -9105,7 +9105,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9574,
-        "eatf_verify_ms": 172.307,
+        "eatf_verify_ms": 176.969,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -9189,7 +9189,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9513,
-        "eatf_verify_ms": 184.319,
+        "eatf_verify_ms": 170.093,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -9273,7 +9273,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9536,
-        "eatf_verify_ms": 170.858,
+        "eatf_verify_ms": 177.108,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -9357,7 +9357,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9452,
-        "eatf_verify_ms": 180.764,
+        "eatf_verify_ms": 176.762,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -9446,7 +9446,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9546,
-        "eatf_verify_ms": 178.649,
+        "eatf_verify_ms": 171.059,
         "network_lookups_required": 1
       },
       "baselines": {
@@ -9530,7 +9530,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9528,
-        "eatf_verify_ms": 176.13,
+        "eatf_verify_ms": 171.28,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -9614,7 +9614,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9424,
-        "eatf_verify_ms": 170.529,
+        "eatf_verify_ms": 174.544,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -9698,7 +9698,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9482,
-        "eatf_verify_ms": 175.053,
+        "eatf_verify_ms": 181.005,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -9780,7 +9780,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9537,
-        "eatf_verify_ms": 175.942,
+        "eatf_verify_ms": 181.855,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -9864,7 +9864,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9537,
-        "eatf_verify_ms": 183.987,
+        "eatf_verify_ms": 178.529,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -9948,7 +9948,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9469,
-        "eatf_verify_ms": 178.864,
+        "eatf_verify_ms": 180.32,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -10030,7 +10030,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9488,
-        "eatf_verify_ms": 178.409,
+        "eatf_verify_ms": 178.474,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -10114,7 +10114,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9686,
-        "eatf_verify_ms": 180.972,
+        "eatf_verify_ms": 180.476,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -10243,7 +10243,7 @@
       "metrics": {
         "packages": 3,
         "package_size_bytes": 14368,
-        "eatf_verify_ms": 263.242,
+        "eatf_verify_ms": 260.106,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -10388,7 +10388,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19454,
-        "eatf_verify_ms": 364.705,
+        "eatf_verify_ms": 355.006,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -10534,7 +10534,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19568,
-        "eatf_verify_ms": 353.94,
+        "eatf_verify_ms": 363.652,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -10679,7 +10679,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19506,
-        "eatf_verify_ms": 356.451,
+        "eatf_verify_ms": 354.345,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -10825,7 +10825,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19485,
-        "eatf_verify_ms": 369.609,
+        "eatf_verify_ms": 355.99,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -10970,7 +10970,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19447,
-        "eatf_verify_ms": 361.016,
+        "eatf_verify_ms": 354.151,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -11115,7 +11115,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19486,
-        "eatf_verify_ms": 351.226,
+        "eatf_verify_ms": 380.597,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -11260,7 +11260,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19521,
-        "eatf_verify_ms": 372.491,
+        "eatf_verify_ms": 362.95,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -11405,7 +11405,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19520,
-        "eatf_verify_ms": 364.656,
+        "eatf_verify_ms": 369.583,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -11555,7 +11555,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19606,
-        "eatf_verify_ms": 357.84,
+        "eatf_verify_ms": 371.611,
         "network_lookups_required": 1
       },
       "baselines": {
@@ -11745,7 +11745,7 @@
       "metrics": {
         "packages": 5,
         "package_size_bytes": 24606,
-        "eatf_verify_ms": 439.95,
+        "eatf_verify_ms": 434.573,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -11890,7 +11890,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19414,
-        "eatf_verify_ms": 346.111,
+        "eatf_verify_ms": 348.892,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -12034,7 +12034,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19587,
-        "eatf_verify_ms": 350.574,
+        "eatf_verify_ms": 344.457,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -12179,7 +12179,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19419,
-        "eatf_verify_ms": 357.032,
+        "eatf_verify_ms": 350.718,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -12323,7 +12323,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19642,
-        "eatf_verify_ms": 352.024,
+        "eatf_verify_ms": 357.715,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -12469,7 +12469,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19522,
-        "eatf_verify_ms": 370.924,
+        "eatf_verify_ms": 353.266,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -12614,7 +12614,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19460,
-        "eatf_verify_ms": 365.151,
+        "eatf_verify_ms": 350.153,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -12760,7 +12760,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19439,
-        "eatf_verify_ms": 343.453,
+        "eatf_verify_ms": 347.151,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -12905,7 +12905,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19401,
-        "eatf_verify_ms": 352.351,
+        "eatf_verify_ms": 358.815,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -13050,7 +13050,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19440,
-        "eatf_verify_ms": 355.603,
+        "eatf_verify_ms": 353.959,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -13195,7 +13195,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19475,
-        "eatf_verify_ms": 349.757,
+        "eatf_verify_ms": 348.253,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -13340,7 +13340,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19474,
-        "eatf_verify_ms": 350.058,
+        "eatf_verify_ms": 355.675,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -13490,7 +13490,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19560,
-        "eatf_verify_ms": 362.454,
+        "eatf_verify_ms": 339.855,
         "network_lookups_required": 1
       },
       "baselines": {
@@ -13680,7 +13680,7 @@
       "metrics": {
         "packages": 5,
         "package_size_bytes": 24542,
-        "eatf_verify_ms": 438.119,
+        "eatf_verify_ms": 443.805,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -13825,7 +13825,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19368,
-        "eatf_verify_ms": 351.368,
+        "eatf_verify_ms": 344.057,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -13969,7 +13969,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19541,
-        "eatf_verify_ms": 354.186,
+        "eatf_verify_ms": 352.251,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -14114,7 +14114,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19373,
-        "eatf_verify_ms": 357.386,
+        "eatf_verify_ms": 359.56,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -14259,7 +14259,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19599,
-        "eatf_verify_ms": 371.765,
+        "eatf_verify_ms": 365.948,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -14405,7 +14405,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19574,
-        "eatf_verify_ms": 344.802,
+        "eatf_verify_ms": 371.654,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -14551,7 +14551,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19553,
-        "eatf_verify_ms": 343.19,
+        "eatf_verify_ms": 350.86,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -14696,7 +14696,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19515,
-        "eatf_verify_ms": 361.425,
+        "eatf_verify_ms": 360.183,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -14841,7 +14841,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19554,
-        "eatf_verify_ms": 363.122,
+        "eatf_verify_ms": 354.852,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -14987,7 +14987,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19589,
-        "eatf_verify_ms": 368.134,
+        "eatf_verify_ms": 357.951,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -15133,7 +15133,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19588,
-        "eatf_verify_ms": 360.67,
+        "eatf_verify_ms": 360.625,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -15284,7 +15284,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19674,
-        "eatf_verify_ms": 341.244,
+        "eatf_verify_ms": 347.654,
         "network_lookups_required": 1
       },
       "baselines": {
@@ -15475,7 +15475,7 @@
       "metrics": {
         "packages": 5,
         "package_size_bytes": 24693,
-        "eatf_verify_ms": 449.967,
+        "eatf_verify_ms": 434.515,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -15621,7 +15621,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19482,
-        "eatf_verify_ms": 364.324,
+        "eatf_verify_ms": 367.863,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -15766,7 +15766,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19655,
-        "eatf_verify_ms": 351.505,
+        "eatf_verify_ms": 360.137,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -15912,7 +15912,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19487,
-        "eatf_verify_ms": 362.236,
+        "eatf_verify_ms": 360.365,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -16058,7 +16058,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19713,
-        "eatf_verify_ms": 359.968,
+        "eatf_verify_ms": 366.334,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -16204,7 +16204,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19491,
-        "eatf_verify_ms": 352.496,
+        "eatf_verify_ms": 369.229,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -16349,7 +16349,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19453,
-        "eatf_verify_ms": 353.724,
+        "eatf_verify_ms": 355.248,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -16494,7 +16494,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19492,
-        "eatf_verify_ms": 357.746,
+        "eatf_verify_ms": 370.509,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -16639,7 +16639,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19527,
-        "eatf_verify_ms": 345.735,
+        "eatf_verify_ms": 360.296,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -16784,7 +16784,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19526,
-        "eatf_verify_ms": 356.189,
+        "eatf_verify_ms": 345.173,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -16934,7 +16934,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19612,
-        "eatf_verify_ms": 346.937,
+        "eatf_verify_ms": 353.06,
         "network_lookups_required": 1
       },
       "baselines": {
@@ -17124,7 +17124,7 @@
       "metrics": {
         "packages": 5,
         "package_size_bytes": 24612,
-        "eatf_verify_ms": 447.213,
+        "eatf_verify_ms": 443.459,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -17269,7 +17269,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19420,
-        "eatf_verify_ms": 371.31,
+        "eatf_verify_ms": 352.9,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -17413,7 +17413,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19593,
-        "eatf_verify_ms": 347.338,
+        "eatf_verify_ms": 369.154,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -17558,7 +17558,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19425,
-        "eatf_verify_ms": 364.737,
+        "eatf_verify_ms": 359.012,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -17703,7 +17703,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19651,
-        "eatf_verify_ms": 355.539,
+        "eatf_verify_ms": 344.311,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -17848,7 +17848,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19432,
-        "eatf_verify_ms": 364.991,
+        "eatf_verify_ms": 344.151,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -17993,7 +17993,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19471,
-        "eatf_verify_ms": 348.443,
+        "eatf_verify_ms": 354.11,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -18139,7 +18139,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19506,
-        "eatf_verify_ms": 341.533,
+        "eatf_verify_ms": 369.075,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -18285,7 +18285,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19504,
-        "eatf_verify_ms": 366.695,
+        "eatf_verify_ms": 354.79,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -18436,7 +18436,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19591,
-        "eatf_verify_ms": 354.458,
+        "eatf_verify_ms": 357.526,
         "network_lookups_required": 1
       },
       "baselines": {
@@ -18627,7 +18627,7 @@
       "metrics": {
         "packages": 5,
         "package_size_bytes": 24548,
-        "eatf_verify_ms": 468.211,
+        "eatf_verify_ms": 443.833,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -18773,7 +18773,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19399,
-        "eatf_verify_ms": 357.22,
+        "eatf_verify_ms": 348.974,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -18918,7 +18918,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19572,
-        "eatf_verify_ms": 362.441,
+        "eatf_verify_ms": 367.998,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -19064,7 +19064,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19404,
-        "eatf_verify_ms": 353.187,
+        "eatf_verify_ms": 352.87,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -19210,7 +19210,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19630,
-        "eatf_verify_ms": 361.47,
+        "eatf_verify_ms": 348.836,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -19354,7 +19354,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19433,
-        "eatf_verify_ms": 359.191,
+        "eatf_verify_ms": 365.865,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -19499,7 +19499,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19468,
-        "eatf_verify_ms": 350.373,
+        "eatf_verify_ms": 357.694,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -19644,7 +19644,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19467,
-        "eatf_verify_ms": 345.647,
+        "eatf_verify_ms": 359.811,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -19794,7 +19794,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19553,
-        "eatf_verify_ms": 346.936,
+        "eatf_verify_ms": 363.168,
         "network_lookups_required": 1
       },
       "baselines": {
@@ -19984,7 +19984,7 @@
       "metrics": {
         "packages": 5,
         "package_size_bytes": 24535,
-        "eatf_verify_ms": 448.221,
+        "eatf_verify_ms": 456.808,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -20129,7 +20129,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19361,
-        "eatf_verify_ms": 355.237,
+        "eatf_verify_ms": 368.18,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -20273,7 +20273,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19534,
-        "eatf_verify_ms": 367.85,
+        "eatf_verify_ms": 374.214,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -20418,7 +20418,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19366,
-        "eatf_verify_ms": 352.336,
+        "eatf_verify_ms": 365.167,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -20563,7 +20563,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19592,
-        "eatf_verify_ms": 339.729,
+        "eatf_verify_ms": 356.579,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -20708,7 +20708,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19507,
-        "eatf_verify_ms": 353.682,
+        "eatf_verify_ms": 346.046,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -20853,7 +20853,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19506,
-        "eatf_verify_ms": 365.578,
+        "eatf_verify_ms": 351.921,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -21003,7 +21003,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19592,
-        "eatf_verify_ms": 358.383,
+        "eatf_verify_ms": 354.825,
         "network_lookups_required": 1
       },
       "baselines": {
@@ -21193,7 +21193,7 @@
       "metrics": {
         "packages": 5,
         "package_size_bytes": 24585,
-        "eatf_verify_ms": 468.796,
+        "eatf_verify_ms": 443.994,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -21338,7 +21338,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19400,
-        "eatf_verify_ms": 351.874,
+        "eatf_verify_ms": 354.579,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -21482,7 +21482,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19573,
-        "eatf_verify_ms": 358.64,
+        "eatf_verify_ms": 354.568,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -21627,7 +21627,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19405,
-        "eatf_verify_ms": 361.295,
+        "eatf_verify_ms": 354.405,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -21772,7 +21772,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19631,
-        "eatf_verify_ms": 351.713,
+        "eatf_verify_ms": 362.294,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -21917,7 +21917,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19541,
-        "eatf_verify_ms": 374.775,
+        "eatf_verify_ms": 345.694,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -22067,7 +22067,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19627,
-        "eatf_verify_ms": 364.296,
+        "eatf_verify_ms": 351.492,
         "network_lookups_required": 1
       },
       "baselines": {
@@ -22257,7 +22257,7 @@
       "metrics": {
         "packages": 5,
         "package_size_bytes": 24630,
-        "eatf_verify_ms": 428.828,
+        "eatf_verify_ms": 454.949,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -22402,7 +22402,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19435,
-        "eatf_verify_ms": 353.355,
+        "eatf_verify_ms": 360.127,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -22546,7 +22546,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19608,
-        "eatf_verify_ms": 362.004,
+        "eatf_verify_ms": 356.523,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -22691,7 +22691,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19440,
-        "eatf_verify_ms": 362.236,
+        "eatf_verify_ms": 356.843,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -22836,7 +22836,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19666,
-        "eatf_verify_ms": 351.418,
+        "eatf_verify_ms": 352.63,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -22986,7 +22986,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19626,
-        "eatf_verify_ms": 348.264,
+        "eatf_verify_ms": 355.828,
         "network_lookups_required": 1
       },
       "baselines": {
@@ -23176,7 +23176,7 @@
       "metrics": {
         "packages": 5,
         "package_size_bytes": 24630,
-        "eatf_verify_ms": 439.032,
+        "eatf_verify_ms": 452.696,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -23321,7 +23321,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19434,
-        "eatf_verify_ms": 349.499,
+        "eatf_verify_ms": 347.711,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -23465,7 +23465,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19607,
-        "eatf_verify_ms": 344.188,
+        "eatf_verify_ms": 364.249,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -23610,7 +23610,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19439,
-        "eatf_verify_ms": 363.598,
+        "eatf_verify_ms": 349.669,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -23755,7 +23755,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19665,
-        "eatf_verify_ms": 358.326,
+        "eatf_verify_ms": 373.204,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -23955,7 +23955,7 @@
       "metrics": {
         "packages": 5,
         "package_size_bytes": 24741,
-        "eatf_verify_ms": 439.907,
+        "eatf_verify_ms": 442.392,
         "network_lookups_required": 2
       },
       "baselines": {
@@ -24105,7 +24105,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19520,
-        "eatf_verify_ms": 354.72,
+        "eatf_verify_ms": 359.662,
         "network_lookups_required": 1
       },
       "baselines": {
@@ -24254,7 +24254,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19693,
-        "eatf_verify_ms": 360.461,
+        "eatf_verify_ms": 366.127,
         "network_lookups_required": 1
       },
       "baselines": {
@@ -24404,7 +24404,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19525,
-        "eatf_verify_ms": 344.334,
+        "eatf_verify_ms": 352.385,
         "network_lookups_required": 1
       },
       "baselines": {
@@ -24554,7 +24554,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19751,
-        "eatf_verify_ms": 355.972,
+        "eatf_verify_ms": 362.012,
         "network_lookups_required": 1
       },
       "baselines": {
@@ -24744,7 +24744,7 @@
       "metrics": {
         "packages": 5,
         "package_size_bytes": 24508,
-        "eatf_verify_ms": 444.655,
+        "eatf_verify_ms": 448.331,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -24933,7 +24933,7 @@
       "metrics": {
         "packages": 5,
         "package_size_bytes": 24717,
-        "eatf_verify_ms": 445.686,
+        "eatf_verify_ms": 440.024,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -25123,7 +25123,7 @@
       "metrics": {
         "packages": 5,
         "package_size_bytes": 24498,
-        "eatf_verify_ms": 443.707,
+        "eatf_verify_ms": 431.885,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -25313,7 +25313,7 @@
       "metrics": {
         "packages": 5,
         "package_size_bytes": 24787,
-        "eatf_verify_ms": 443.273,
+        "eatf_verify_ms": 429.661,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -25455,7 +25455,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19554,
-        "eatf_verify_ms": 359.732,
+        "eatf_verify_ms": 365.073,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -25600,7 +25600,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19333,
-        "eatf_verify_ms": 368.015,
+        "eatf_verify_ms": 357.126,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -25745,7 +25745,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19559,
-        "eatf_verify_ms": 354.368,
+        "eatf_verify_ms": 372.458,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -25889,7 +25889,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19506,
-        "eatf_verify_ms": 341.513,
+        "eatf_verify_ms": 343.549,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -26033,7 +26033,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19732,
-        "eatf_verify_ms": 351.288,
+        "eatf_verify_ms": 378.05,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -26178,7 +26178,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19564,
-        "eatf_verify_ms": 380.97,
+        "eatf_verify_ms": 352.186,
         "network_lookups_required": 0
       },
       "baselines": {

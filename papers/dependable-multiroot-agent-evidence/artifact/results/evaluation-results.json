@@ -138,7 +138,7 @@
       "metrics": {
         "packages": 4,
         "package_size_bytes": 19004,
-        "eatf_verify_ms": 364.074,
+        "eatf_verify_ms": 359.234,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -220,7 +220,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9347,
-        "eatf_verify_ms": 173.847,
+        "eatf_verify_ms": 169.378,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -304,7 +304,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9361,
-        "eatf_verify_ms": 177.451,
+        "eatf_verify_ms": 183.472,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -389,7 +389,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9536,
-        "eatf_verify_ms": 178.586,
+        "eatf_verify_ms": 189.158,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -473,7 +473,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9327,
-        "eatf_verify_ms": 174.368,
+        "eatf_verify_ms": 174.187,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -557,7 +557,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9306,
-        "eatf_verify_ms": 177.97,
+        "eatf_verify_ms": 179.544,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -641,7 +641,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9353,
-        "eatf_verify_ms": 185.559,
+        "eatf_verify_ms": 172.965,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -723,7 +723,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9352,
-        "eatf_verify_ms": 182.318,
+        "eatf_verify_ms": 174.875,
         "network_lookups_required": 0
       },
       "baselines": {
@@ -812,7 +812,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9333,
-        "eatf_verify_ms": 197.396,
+        "eatf_verify_ms": 182.629,
         "network_lookups_required": 1
       },
       "baselines": {
@@ -896,7 +896,7 @@
       "metrics": {
         "packages": 2,
         "package_size_bytes": 9403,
-        "eatf_verify_ms": 177.615,
+        "eatf_verify_ms": 172.972,
         "network_lookups_required": 0
       },
       "baselines": {

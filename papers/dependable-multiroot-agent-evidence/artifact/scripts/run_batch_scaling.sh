@@ -37,7 +37,7 @@ grep -E "Elapsed|Maximum resident" "$OUT/batch-22.time"
 tail -2 "$OUT/batch-22.out"
 
 # (3) scaling: replicate to N packages, batch once
-for N in 100 1000; do
+for N in 100 1000 10000; do
   SCRATCH=$(mktemp -d /tmp/eatf-scale-XXXX)
   i=0
   while [ "$i" -lt "$N" ]; do

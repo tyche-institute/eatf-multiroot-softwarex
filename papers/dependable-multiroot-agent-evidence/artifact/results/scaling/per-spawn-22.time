@@ -2,20 +2,20 @@
   find corpus/generated -name "*.aep" | while read p; do
     node vendor/eatf/cli/eatf-verify/bin/eatf-verify.js --json "$p" > /dev/null
   done"
-	User time (seconds): 2.60
-	System time (seconds): 0.32
-	Percent of CPU this job got: 151%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.92
+	User time (seconds): 2.63
+	System time (seconds): 0.37
+	Percent of CPU this job got: 150%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.00
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 76156
+	Maximum resident set size (kbytes): 76624
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 191104
-	Voluntary context switches: 2054
-	Involuntary context switches: 163
+	Minor (reclaiming a frame) page faults: 186456
+	Voluntary context switches: 2073
+	Involuntary context switches: 149
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0

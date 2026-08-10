@@ -1,16 +1,22 @@
 #!/usr/bin/env python3
 """Independent package-layer verification with plain OpenSSL.
 
-An implementation-independence check for the package layer (R3.1/R3.3): every
-generated .aep's RSA signature and content hash are re-verified using ONLY
-`openssl` and `sha256sum` — tools that share no code with the EATF substrate
-or with this artifact. Confirms that package-layer acceptance does not depend
-on the EATF implementation.
+An implementation-independence check for the package layer: every generated
+.aep's RSA signature and content hash are re-verified with the `openssl`
+binary and Python's own `hashlib` — neither of which shares code with the EATF
+substrate or with this artifact. It confirms that package-layer acceptance
+does not depend on the EATF implementation.
 
 Checks per package:
   1. base64-decoded signature.sig verifies canonical.bin against public_key.pem
      (RSA PKCS#1 v1.5, SHA-256) via `openssl dgst -verify`;
-  2. hash.sha256 equals the actual SHA-256 of canonical.bin via `sha256sum`.
+  2. hash.sha256 equals the SHA-256 of canonical.bin, recomputed here.
+
+SCOPE. This is what an AEP binds: the action payload. The attribute metadata
+the policy overlay evaluates (`metadata.json` — issuers, scope, broker fields,
+revocation status, algorithm profile) is carried in the package but is NOT
+covered by signature.sig or hash.sha256, so passing this check says nothing
+about those attributes' authenticity. See the paper's Limitations section.
 
 Exit 0 = every package passes both; 1 otherwise.
 """

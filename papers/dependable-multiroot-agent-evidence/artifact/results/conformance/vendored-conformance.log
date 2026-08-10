@@ -1,0 +1,15 @@
+PASS  package.aep  expected=false  actual=false  (RSA signature does not verify against public_key.pem.)
+PASS  package.aep  expected=false  actual=false  (ML-DSA-65 signature does not verify.)
+PASS  package.aep  expected=false  actual=false  (timestamp.tsr missing or empty.)
+PASS  package.aep  expected=false  actual=false  (Missing required entry: canonical.bin.)
+PASS  package.aep  expected=false  actual=false  (canonical.bin does not match a supported canonical form.)
+PASS  package.aep  expected=false  actual=false  (overt_receipt.json invalid: policy.decision does not match metadata.policy_decision.)
+PASS  package.aep  expected=false  actual=false  (overt_receipt.json invalid: content_hash does not match hash.sha256.)
+PASS  package.aep  expected=false  actual=false  (RSA signature does not verify against public_key.pem.)
+MISMATCH  package.aep  expected=true  actual=false  (ML-DSA-65 signature does not verify.)
+MISMATCH  package.aep  expected=true  actual=false  (timestamp.tsr missing or empty.)
+MISMATCH  package.aep  expected=true  actual=false  (timestamp.tsr missing or empty.)
+MISMATCH  package.aep  expected=true  actual=false  (timestamp.tsr missing or empty.)
+MISMATCH  package.aep  expected=true  actual=false  (timestamp.tsr missing or empty.)
+
+Conformance: 0 verified, 13 rejected, 5 contract mismatches.

@@ -1,27 +1,35 @@
-# P13 — Policy-overlay decision procedure, derived from code (R1.4i)
+# Policy-overlay decision procedure
 
-Source of truth: `artifact-v0.2/src/eatf_policy_overlay.py` (285 lines), read in full 2026-08-09.
-Every rule below cites the implementing lines. ⛔ No lattice-theoretic claims — the verdict rule
-is a two-step priority join and is presented as exactly that.
+Full pseudocode for the multi-root policy layer, derived line by line from
+`src/eatf_policy_overlay.py` (295 lines). The paper prints a condensed form as
+Algorithm 1; this document gives all three procedures and cites the
+implementing lines, so that a reader can check the description against the
+source without reading the source first.
 
-## Verdict algebra (lines 36–41)
+The verdict rule is a two-step priority join over reason statuses — nothing
+more elaborate is claimed or implemented.
+
+## Verdict algebra (lines 36–48)
 
 ```
 final_verdict(reasons):
-    if ∃ reason with status = fail     → reject
+    if ∃ reason with status = fail      → reject
     elif ∃ reason with status = missing → indeterminate
     else                                → accept
 ```
 
-Three statuses only; `fail` dominates `missing` dominates `pass`. No other combination logic.
+Three statuses only: `fail` dominates `missing`, which dominates `pass`. Note
+that a package-layer failure and a policy violation both yield `reject`; what
+distinguishes them is the reason trace, not the verdict.
 
-## Algorithm 1 — EVALUATE-CASE (lines 66–197)
+## Algorithm 1 — EVALUATE-CASE (lines 66–199)
 
 ```
 Input:  case (id, verification_time τ, expected_verdict),
         package_records R (from eatf-verify --json),
-        policy P (org-a-policy.json)
-Output: verdict ∈ {accept, reject, indeterminate}, reason trace, metrics, baseline verdicts
+        policy P (a relying-party policy document)
+Output: verdict ∈ {accept, reject, indeterminate}, reason trace, metrics,
+        baseline verdicts
 
 1  reasons ← []
 2  for r ∈ R:                                        ▷ package layer (74–80)
@@ -29,18 +37,18 @@ Output: verdict ∈ {accept, reject, indeterminate}, reason trace, metrics, base
 4      else:       add(eatf-package-invalid, fail) and echo r.failure_reason as fail
 5  I ← {r ∈ R : r.role = identity ∧ r.valid}         ▷ (82–87)
 6  A ← [r ∈ R : r.role = action ∧ r.valid]
-7  for id ∈ I:                                       ▷ identity layer (89–107)
+7  for id ∈ I:                                       ▷ identity layer (89–109)
 8      id.issuer ∈ P.trusted_identity_issuers         else fail(identity-issuer-untrusted)
 9      id.method ∈ P.accepted_identity_methods        else fail(identity-method-unaccepted)
 10     rank(id.assurance) ≥ rank(P.min_identity_assurance)
-                                                      else fail(⚠ see defect note)
-11 seen ← ∅                                          ▷ action layer (109–176)
+                                                      else fail(identity-assurance-insufficient)
+11 seen ← ∅                                          ▷ action layer (111–178)
 12 for a ∈ A:
 13     TRUSTED-ISSUER(a.issuer, action, a.issued_at, τ, P)   else fail(action-issuer-untrusted)
 14     id ← I[a.identity_attestation_id]
-15         absent                → fail(identity-hash-missing)
+15         absent                 → fail(identity-hash-missing)
 16         id.subject ≠ a.subject → fail(identity-substitution)   ▷ binding check
-17         else                  → pass(identity-binding)
+17         else                   → pass(identity-binding)
 18     a.scope ∈ P.accepted_scopes                    else fail(scope-mismatch)
 19     (a.subject, a.sequence) ∈ seen → fail(sequence-replay); else insert   ▷ replay
 20     if a.requires_live_lookup:
@@ -48,10 +56,10 @@ Output: verdict ∈ {accept, reject, indeterminate}, reason trace, metrics, base
 22         else           → missing(network-lookup-required)
 23     if P.require_embedded_validation_material:
 24         a.validation_material_embedded             else fail(archive-material-insufficient)
-25     if P.revocation.required:                      ▷ (154–166)
-26         status absent → (P.revocation.missing=reject ? fail : missing)(revocation-missing)
+25     if P.revocation.required:                      ▷ (156–168)
+26         status absent → (P.revocation.missing = reject ? fail : missing)(revocation-missing)
 27         age(τ) > P.revocation.max_age_days
-                        → (P.revocation.stale=reject ? fail : missing)(revocation-stale)
+                        → (P.revocation.stale = reject ? fail : missing)(revocation-stale)
 28         else → pass(revocation-status)
 29     a.algorithm_profile ∈ P.accepted_algorithm_profiles → pass
 30         else if P.archive_mode ∧ profile ∈ P.archive_algorithm_profiles → pass
@@ -60,7 +68,11 @@ Output: verdict ∈ {accept, reject, indeterminate}, reason trace, metrics, base
 33 return final_verdict(reasons), trace, metrics, BASELINES(case, R)
 ```
 
-## Algorithm 2 — TRUSTED-ISSUER with time cut-offs (lines 200–218)
+Line 115: `action_issued_at` falls back to `created_at` when the attribute is
+absent, so a package that omits an explicit issuance time is still evaluated
+against the trust cut-offs rather than skipped.
+
+## Algorithm 2 — TRUSTED-ISSUER with time cut-offs (lines 202–220)
 
 ```
 issuer ∈ P.trusted_{role}_issuers                     else untrusted
@@ -70,7 +82,7 @@ c.allow_issued_before_cutoff ∧ issued_at < c.after    → trusted   ▷ grandf
 otherwise                                             → untrusted
 ```
 
-## Algorithm 3 — EVALUATE-BROKER (lines 221–250)
+## Algorithm 3 — EVALUATE-BROKER (lines 223–252)
 
 ```
 no broker_id → pass(broker-absent)
@@ -82,30 +94,29 @@ broker claims an authoritative verdict                → fail   ▷ broker may 
 else → pass(broker-policy)
 ```
 
-## Built-in baseline verdicts (lines 253–284) — directly relevant to R3(3)/P6
+## Built-in baseline verdicts (lines 255–294)
 
-The artifact **already computes four baseline verdicts per case**, modelling the架 alternatives the
-paper argues against:
+Alongside its own verdict the evaluator computes four deliberately weaker
+models per case, so that the overlay's discrimination can be compared with
+simpler alternatives on identical evidence. Table 2 of the paper reports the
+outcome.
 
 | baseline | rule (as implemented) |
 |---|---|
-| `mutable_log` | accept iff the case is flagged mutable-log-only — models "the app log says so" |
-| `single_root_registry` | accept iff every issuer = `root-a`, else reject — models one-registry trust |
-| `detached_signature` | accept iff all packages valid ∧ all action validation material embedded, else indeterminate |
-| `broker_authoritative` | whatever the broker claims; indeterminate if no claim |
+| `mutable_log` | accept iff the case is flagged mutable-log-only — models "the application log says so" |
+| `single_root_registry` | accept iff every issuer is the single registry root, else reject |
+| `detached_signature` | accept iff all packages are valid ∧ all action validation material is embedded, else indeterminate |
+| `broker_authoritative` | whatever the broker claims; indeterminate when no claim is made |
 
-These are exactly the "no baseline analogue" comparison points for the scoped-C table: the revision
-should *surface* them (per-case table: overlay verdict vs four baselines) — the machinery exists,
-the paper just never printed it.
+Two of these were corrected in v0.2: as written in v0.1 the mutable-log model
+tested a flag no case set and the single-root model compared against an issuer
+name no case used, so both were vacuous on this corpus. The source documents
+the previous behaviour in comments.
 
-## ⚠ Defect found while deriving (fix in v0.2, disclose in the response letter)
+## Scope of what the reason trace covers
 
-`eatf_policy_overlay.py:107`: the **identity-assurance failure** emits reason code
-`identity-method-unaccepted` — a copy-paste of the line-100 code — instead of an
-assurance-specific code. Verdicts are unaffected (still `fail`), but the reason trace mislabels
-*why*, and reasoned verdicts are part of the paper's claim. v0.2: introduce
-`identity-assurance-insufficient`, add a regression case where method passes and assurance fails,
-and state the fix in the response letter (fix-rounds guardrail: the fix itself gets adversaried).
-
-Also worth one manuscript sentence: `action_issued_at` falls back to `created_at` (line 113) —
-document the fallback rather than leaving it implicit.
+The overlay decides on attributes carried in each package's `metadata.json`.
+The EATF package layer signs the action payload (`canonical.bin`) and records
+its digest; it does not bind `metadata.json`. The corpus therefore exercises
+policy decisions over declared attributes, with package-layer integrity checked
+separately. The paper states this in §Validation and §Limitations.

@@ -23,8 +23,10 @@ ARTIFACT_ROOT = Path(__file__).resolve().parents[1]
 EATF_ROOT = ARTIFACT_ROOT / "vendor/eatf"
 EATF_VERIFY = EATF_ROOT / "cli/eatf-verify/bin/eatf-verify.js"
 # v0.2: env-var overrides for the mutation pipeline; defaults = v0.1 behaviour.
-GENERATED = Path(os.environ.get("CORPUS_GENERATED", ARTIFACT_ROOT / "corpus/generated"))
-RESULTS = Path(os.environ.get("RESULTS_DIR", ARTIFACT_ROOT / "results"))
+# Overrides are resolved against the caller's working directory, so a relative
+# value works from anywhere; paths inside the records stay artifact-relative.
+GENERATED = Path(os.environ.get("CORPUS_GENERATED", ARTIFACT_ROOT / "corpus/generated")).resolve()
+RESULTS = Path(os.environ.get("RESULTS_DIR", ARTIFACT_ROOT / "results")).resolve()
 
 
 def main() -> int:
