@@ -17,7 +17,7 @@ original submission is preserved without modification at tag
 |---|---|
 | `eatf-multiroot-softwarex-v0.1` | the reviewed submission; its release asset `softwarex-eatf-multiroot-artifact-v0.1.zip` is the exact archive submitted to the journal |
 | `eatf-multiroot-softwarex-v0.2`, `…-v0.2.1` | revision capsules published as release assets while the repository tree still carried v0.1 (superseded; kept for the record) |
-| `eatf-multiroot-softwarex-v0.2.2` | the revision: repository tree and release capsule are byte-identical (`git archive` of the tagged tree) |
+| `eatf-multiroot-softwarex-v0.2.2` | the revision: the release capsule is `git archive` output of the artifact subtree, so capsule and repository tree have identical contents |
 
 Zenodo: concept DOI `10.5281/zenodo.20777207`; each release capsule is
 archived under its own version DOI.
