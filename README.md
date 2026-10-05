@@ -74,12 +74,13 @@ it deliberately.
 
 The vendored runtime is a pruned snapshot of an upstream project. In releases
 up to v0.2.2 that snapshot carried upstream's full platform README, which
-included unrelated internal material — demo account passwords for a local
-demo profile, an internal project codename and internal source paths. From
-v0.2.3 it is replaced by a provenance stub describing only what this artifact
-executes. The affected demo credentials belong to a local development profile,
-not to any deployed service; earlier tags are left untouched because they are
-on the journal's editorial record.
+included unrelated internal material — demo account passwords, an internal
+project codename and internal source paths. From v0.2.3 it is replaced by a
+provenance stub describing only what this artifact executes. The demo accounts
+named in those older copies also existed on the upstream project's hosted
+service; they were disabled there on 5 October 2026, so the old passwords no
+longer grant access. Earlier tags are left untouched because they are on the
+journal's editorial record.
 
 ## Claim boundary
 
