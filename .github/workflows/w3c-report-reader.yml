@@ -1,0 +1,31 @@
+name: Read the v0.1 run report
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  read-report:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install the pinned reader
+        run: python3 -m pip install --disable-pip-version-check -r ci/reader-requirements.txt
+      - name: Require "conforms" for ci/w3c/run-report-v01.json
+        run: |
+          set +e
+          out="$(agent-evidence-vectors --read-w3c-report ci/w3c/run-report-v01.json)"
+          code=$?
+          set -e
+          printf '%s\n' "$out"
+          echo "exit code: $code"
+          test "$code" -eq 0
+          test "$out" = "conforms"
